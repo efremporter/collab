@@ -7,7 +7,6 @@ There's an entire community on YouTube regarding music production. Beat makers (
 
 Using collab, producers can:
 - Post samples & beats, which artists or other producers can use in their own creation.
-- Gain exosure
 
 
 ## Functionality & MVP
