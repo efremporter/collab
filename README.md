@@ -7,7 +7,14 @@ There's an entire community on YouTube regarding music production. Beat makers (
 
 Using collab, producers can:
 - Post samples & beats, which artists or other producers can use in their own creation.
+- Network with different artists who choose to use your beat
+- Upvote/downvote versions of songs
 
+Using collab, artists can:
+- Access beats that would otherwise be available (often) by purchase only
+- Post their version of a specific song on a producer's page
+- Gain exposure to a producer's entire network of followers, once posting a song on that producer's page
+- Upvote/downvote versions of songs
 
 ## Functionality & MVP
 - Users can sign up, login, logout, and delete their account
