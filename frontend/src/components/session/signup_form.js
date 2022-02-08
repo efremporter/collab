@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-
+import signup from './signup-login.css'
 class SignupForm extends React.Component {
   constructor(props) {
     super(props);
@@ -56,39 +56,53 @@ class SignupForm extends React.Component {
 
   render() {
     return (
-      <div className="signup-form-container">
-        <form onSubmit={this.handleSubmit}>
-          <div className="signup-form">
+    
+        <form className='signup-form' onSubmit={this.handleSubmit}>
+          <div className="input-elements">
+            <div id='form-title'>Create an Account</div>
+            <hr/>
             <br/>
-              <input type="text"
-                value={this.state.email}
-                onChange={this.update('email')}
-                placeholder="Email"
-              />
+            <div id='email-bar'>Email 
+                <input 
+                  type="text"
+                  value={this.state.email}
+                  onChange={this.update('email')}
+                  placeholder="▶"
+                />
+            </div>
             <br/>
-              <input type="text"
-                value={this.state.handle}
-                onChange={this.update('handle')}
-                placeholder="Handle"
-              />
+            <div id="username-bar">Username 
+                <input type="text"
+                  id="username-bar"
+                  value={this.state.handle}
+                  onChange={this.update('handle')}
+                  placeholder="▶"
+                />
+            </div>
             <br/>
-              <input type="password"
-                value={this.state.password}
-                onChange={this.update('password')}
-                placeholder="Password"
-              />
+          <div id="password-bar">Password 
+                <input 
+                  type="password"
+                  value={this.state.password}
+                  onChange={this.update('password')}
+                  placeholder="▶"
+                />
+            </div>
             <br/>
-              <input type="password"
-                value={this.state.password2}
-                onChange={this.update('password2')}
-                placeholder="Confirm Password"
-              />
+            <div id="password-bar">Confirm Password 
+                <input 
+                  type="password"
+                  value={this.state.password2}
+                  onChange={this.update('password2')}
+                  placeholder="▶"
+                />
+            </div>
             <br/>
-            <input type="submit" value="Submit" />
+            <input id='form-but' type="submit" value="▶" />
             {this.renderErrors()}
           </div>
         </form>
-      </div>
+      
     );
   }
 }

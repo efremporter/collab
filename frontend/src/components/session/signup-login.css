@@ -1,0 +1,78 @@
+form{
+    border: 3px solid white;
+    box-sizing: border-box;
+    padding: 16px;
+    /* font-family: ableton sans; */
+    margin-top: 1rem;
+    width: 50%;
+}
+
+input[type=text], input[type=password] {
+  width: 60%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: block;
+  border: none;
+  background: #aaa0a0;
+  border-radius: 1rem;
+}
+
+#form-title{
+  color: white;
+  position: relative;
+  left: 20rem;
+}
+
+
+
+::placeholder{
+  color: rgb(150, 230, 30)
+}
+
+#email-bar :focus{
+  background-color: orange;
+  outline: none;
+}
+
+#password-bar :focus{
+  background-color: skyblue;
+  outline: none;
+}
+
+#username-bar :focus{
+  background-color: rgb(224, 121, 103);
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  
+}
+
+div{
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+body{
+  background-color: rgb(102, 98, 98);
+}
+
+#form-but{
+  width: 15%;
+  height: 42px;
+  border-color: #aaa0a0;
+  background-color: #aaa0a0;
+  color: rgb(150, 230, 30);
+  font-size: 1.2rem;
+  border-radius: 0.1rem;
+
+}
+
+#form-but:hover {
+  background-color: red;
+  color: black;
+  border-color: red;
+   cursor: pointer;
+}
