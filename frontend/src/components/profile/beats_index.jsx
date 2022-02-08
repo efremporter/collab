@@ -7,11 +7,11 @@ class BeatsIndex extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchAllBeats();
+    this.props.fetchBeats(this.props.userId);
   }
 
   render() {
-    // console.log(this.props.beats)
+    console.log(this.props)
     return (
       <div>
         <div>This is the profile beats index!</div>
