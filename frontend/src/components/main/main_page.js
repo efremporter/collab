@@ -5,7 +5,7 @@ class MainPage extends React.Component {
   render() {
     return (
       <div>
-        <h1>ColLab</h1>
+        
       </div>
     );
   }
