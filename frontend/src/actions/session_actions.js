@@ -7,7 +7,6 @@ export const RECEIVE_USER_LOGOUT = "RECEIVE_USER_LOGOUT";
 export const RECEIVE_USER_SIGN_IN = "RECEIVE_USER_SIGN_IN";
 
 export const receiveCurrentUser = currentUser => {
-    console.log(currentUser)
     return {type: RECEIVE_CURRENT_USER,
     currentUser}
 };
