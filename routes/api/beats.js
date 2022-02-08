@@ -7,14 +7,19 @@ const Beat = require('../../models/Beat');
 const validateBeatInput = require('../../validation/beats');
 
 router.get('/', (req, res) => {
-  // console.log('request', req.body)
+    // if (req.body) {
+    //   Beat.find({user: req.body.userId})
+    //     .then(beats => res.json(beats))
+    //     .catch(err => res.status(404).json({ nobeatsfound: 'No beats found from that user' }))
+    // }
     Beat.find()
         .sort({ date: -1 })
         .then(beats => res.json(beats))
         .catch(err => res.status(404).json({ nobeatsfound: 'No beats found' }));
 });
 
-router.get('/user/:user_id', (req, res) => {
+router.get('/:user_id', (req, res) => {
+  console.log('here', req.params)
     Beat.find({user: req.params.user_id})
         .then(beats => res.json(beats))
         .catch(err =>

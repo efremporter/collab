@@ -6,7 +6,8 @@ class BeatsIndexItem extends React.Component {
   }
 
   render() {
-    console.log(this.props.beat.title)
+    console.log(this.props.beat.title);
+    // if (!this.props.beat) return null;
     return (
       <div> The title of this beat is: 
         {this.props.beat.title}

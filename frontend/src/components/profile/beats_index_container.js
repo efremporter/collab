@@ -1,16 +1,17 @@
 import { connect } from 'react-redux';
-import { fetchAllBeats } from '../../actions/beat_actions';
+import { fetchBeats } from '../../actions/beat_actions';
 import BeatsIndex from './beats_index';
 
 const mSTP = state => {
   return {
+    userId: state.session.user.id,
     beats: Object.values(state.beats)
   }
 }
 
 const mDTP = dispatch => {
   return {
-    fetchAllBeats: () => dispatch(fetchAllBeats())
+    fetchBeats: userId => dispatch(fetchBeats(userId))
   }
 }
 
