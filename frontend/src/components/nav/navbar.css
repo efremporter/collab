@@ -1,0 +1,37 @@
+.splash-body{
+    /* background-color: grey; 
+    height: 100vh;  */
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: blue 
+}
+
+.header {
+    margin-top: 2rem;
+}
+#login-but button {
+    width: 5rem;
+    height: 2rem;
+    
+}
+
+#signup-but button { 
+    width: 5rem;
+    height:  2rem;
+}
+
+#login-signup-but {
+    display:flex;
+    justify-content: center;
+   
+}
+#login-but, #signup-but{
+     margin: 0px 10px 0px 10px;
+}
+
+
+
+
