@@ -8,8 +8,7 @@ const BeatsReducer = (state={}, action) => {
   switch(action.type) {
 
     case RECEIVE_BEATS:
-      Object.assign(nextState, action.beats);
-      return nextState;
+      return action.beats
 
     case RECEIVE_BEAT:
       nextState[action.beat.id] = action.beat;
