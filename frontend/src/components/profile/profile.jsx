@@ -1,4 +1,5 @@
 import React from 'react';
+import BeatsIndex from './beats_index';
 
 class Profile extends React.Component {
   constructor(props) {
@@ -9,7 +10,7 @@ class Profile extends React.Component {
     return (
       <div>
         <h2>Profile</h2>
-        
+        <BeatsIndex />
       </div>
     )
   }

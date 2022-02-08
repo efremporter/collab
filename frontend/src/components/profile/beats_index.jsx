@@ -11,3 +11,5 @@ class BeatsIndex extends React.Component {
     )
   }
 }
+
+export default BeatsIndex;
