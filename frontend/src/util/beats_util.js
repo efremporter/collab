@@ -1,9 +1,13 @@
 import axios from 'axios';
 
-export const fetchBeats = (userData) => {
-  return axios.get('/api/beats/', userData);
+export const fetchBeats = userId => {
+  return axios.get('/api/beats', userId);
 };
 
-// export const login = (userData) => {
-//   return axios.post('/api/users/login', userData);
-// };
+export const fetchBeat = beatId => {
+  return axios.get('/api/beats', beatId)
+}
+
+export const fetchAllBeats = () => {
+  return axios.get('/api/beats')
+}

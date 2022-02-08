@@ -7,6 +7,7 @@ const Beat = require('../../models/Beat');
 const validateBeatInput = require('../../validation/beats');
 
 router.get('/', (req, res) => {
+  // console.log('request', req.body)
     Beat.find()
         .sort({ date: -1 })
         .then(beats => res.json(beats))
