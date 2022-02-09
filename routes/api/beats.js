@@ -1,4 +1,6 @@
 const express = require('express');
+const multer  = require('multer');
+const upload = multer({ dest: 'uploads/' });
 const router = express.Router();
 const mongoose = require('mongoose');
 const passport = require('passport');
@@ -7,38 +9,31 @@ const Beat = require('../../models/Beat');
 const validateBeatInput = require('../../validation/beats');
 
 router.get('/', (req, res) => {
-    // if (req.body) {
-    //   Beat.find({user: req.body.userId})
-    //     .then(beats => res.json(beats))
-    //     .catch(err => res.status(404).json({ nobeatsfound: 'No beats found from that user' }))
-    // }
     Beat.find()
-        .sort({ date: -1 })
-        .then(beats => res.json(beats))
-        .catch(err => res.status(404).json({ nobeatsfound: 'No beats found' }));
+      .sort({ date: -1 })
+      .then(beats => res.json(beats))
+      .catch(err => res.status(404).json({ nobeatsfound: 'No beats found' }));
 });
 
 router.get('/:user_id', (req, res) => {
-  console.log('here', req.params)
     Beat.find({user: req.params.user_id})
-        .then(beats => res.json(beats))
-        .catch(err =>
-            res.status(404).json({ nobeatsfound: 'No beats found from that user' }
-        )
+      .then(beats => res.json(beats))
+      .catch(err =>
+          res.status(404).json({ nobeatsfound: 'No beats found from that user' }
+      )
     );
 });
 
 router.get('/:id', (req, res) => {
-    Beat.findById(req.params.id)
-        .then(beat => res.json(beat))
-        .catch(err =>
-            res.status(404).json({ nobeatsfound: 'No beat found with that ID' })
-        );
+  Beat.findById(req.params.id)
+    .then(beat => res.json(beat))
+    .catch(err =>
+        res.status(404).json({ nobeatsfound: 'No beat found with that ID' })
+    );
 });
 
-router.post('/',
-    passport.authenticate('jwt', { session: false }),
-    (req, res) => {
+router.post('/', passport.authenticate('jwt', { session: false }), (req, res) => {
+
       const { errors, isValid } = validateBeatInput(req.body);
   
       if (!isValid) {
@@ -50,7 +45,7 @@ router.post('/',
         file: req.body.file,
         user: req.user.id
       });
-  
+      console.log('POSTPOSTPOST')
       newBeat.save().then(beat => res.json(beat));
     }
   );
