@@ -1,10 +1,12 @@
 form{
-    border: 3px solid white;
+    border: 1px solid white;
     box-sizing: border-box;
     padding: 16px;
-    /* font-family: ableton sans; */
+
     margin-top: 1rem;
-    width: 50%;
+    width: 30%;
+
+    margin-left: 1rem
 }
 
 input[type=text], input[type=password] {
@@ -26,16 +28,16 @@ input[type=text], input[type=password] {
 
 
 ::placeholder{
-  color: rgb(150, 230, 30)
+  color: black
 }
 
 .email-bar :focus{
-  background-color: orange;
+  background-color: rgb(224, 121, 103);
   outline: none;
 }
 
 .password-bar :focus{
-  background-color: skyblue;
+  background-color: rgb(224, 121, 103);
   outline: none;
 }
 
@@ -45,7 +47,7 @@ input[type=text], input[type=password] {
 }
 
 hr {
-  border: 1px solid #f1f1f1;
+  border: 0.5px solid #f1f1f1;
   margin-bottom: 25px;
   
 }
@@ -56,17 +58,25 @@ div{
 }
 
 body{
-  background-color: rgb(102, 98, 98);
+ 
+  background: url("../../images/enoc-valenzuela-5n3voxk3JDU-unsplash.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 
 .form-but{
-  width: 15%;
-  height: 42px;
+  width: 7rem;
+  height: 3.5rem;
   border-color: #aaa0a0;
   background-color: #aaa0a0;
-  color: rgb(150, 230, 30);
+  color: black;
   font-size: 1.2rem;
   border-radius: 0.1rem;
+  display:flex;
+  justify-content: center;
 
 }
 

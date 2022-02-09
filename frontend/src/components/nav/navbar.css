@@ -4,7 +4,7 @@
     justify-content: center;
     font-family: ableton sans; 
     font-size: 48px;
-    font-weight: 800;
+    font-weight: bold;
 }
 
 .header {
@@ -23,20 +23,21 @@
 
 .login-but-container button, 
 .signup-but-container button {
-    width: 6rem;
-    height: 3rem;
-    background-color: rgb(102, 98, 98);
+    width: 7rem;
+    height: 3.5rem;
+    background-color: #aaa0a0;
+    font-weight: bold;
 }
 
-.login-but:hover, 
-.signup-but:hover {
+.login-but-container button:hover, 
+.signup-but-container button:hover {
     background-color: red;
     cursor: pointer;
 }
 
 .login-but-text, 
 .signup-but-text {
-    color: white;
+    color: black;
 }
 
 /* .login-but-text:hover, 
