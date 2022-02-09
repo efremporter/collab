@@ -17,10 +17,13 @@ class NavBar extends React.Component {
   getLinks() {
       if (this.props.loggedIn) {
         return (
-            <div>
-                <Link to={'/feed'}>All Beats</Link>
-                <Link to={'/profile'}>Profile</Link>
-                <button onClick={this.logoutUser}>Logout</button>
+            <div className="drop-down-menu">
+              <button className='drop-down-menu-bt'>Menu</button>
+              <div className='dropdown-content'>
+              <Link className='db-item' to={'/feed'} style={{ textDecoration: 'none' }} >All Beats</Link> 
+             <Link className='db-item' to={'/profile'} style={{ textDecoration: 'none' }} >Profile</Link>
+              <button className='db-item' id='logout-bt' onClick={this.logoutUser}>Logout</button>
+              </div>
             </div>
         );
       } else {
