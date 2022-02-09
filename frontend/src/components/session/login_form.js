@@ -63,9 +63,9 @@ class LoginForm extends React.Component {
 
       <form className='signup-form' onSubmit={this.handleSubmit}>
         <div className='input-elements'>
-          <div className='form-title'>Login</div>
+          <div className='form-title'>LOGIN</div>
           <hr/>
-          <div className="email-bar">Email
+          <div className="email-bar">EMAIL
               <input
                 className="email-bar"
                 type="text"
@@ -75,7 +75,7 @@ class LoginForm extends React.Component {
               />
           </div>
             <br/>
-          <div className="password-bar">Password
+          <div className="password-bar">PASSWORD
               <input 
                 type="password"
                 value={this.state.password}
