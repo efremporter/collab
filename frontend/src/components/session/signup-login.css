@@ -17,29 +17,29 @@ input[type=text], input[type=password] {
   border-radius: 1rem;
 }
 
-#form-title{
+.form-title{
   color: white;
-  position: relative;
+  display: flex;
+  justify-content: center;
   left: 20rem;
 }
-
 
 
 ::placeholder{
   color: rgb(150, 230, 30)
 }
 
-#email-bar :focus{
+.email-bar :focus{
   background-color: orange;
   outline: none;
 }
 
-#password-bar :focus{
+.password-bar :focus{
   background-color: skyblue;
   outline: none;
 }
 
-#username-bar :focus{
+.username-bar :focus{
   background-color: rgb(224, 121, 103);
   outline: none;
 }
@@ -59,7 +59,7 @@ body{
   background-color: rgb(102, 98, 98);
 }
 
-#form-but{
+.form-but{
   width: 15%;
   height: 42px;
   border-color: #aaa0a0;
@@ -70,9 +70,9 @@ body{
 
 }
 
-#form-but:hover {
+.form-but:hover {
   background-color: red;
   color: black;
   border-color: red;
-   cursor: pointer;
+  cursor: pointer;
 }

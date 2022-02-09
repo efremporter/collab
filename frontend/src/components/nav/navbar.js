@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import navbar from './navbar.css'
+import * as navbarcss from './navbar.css'
+
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
@@ -24,14 +25,16 @@ class NavBar extends React.Component {
         );
       } else {
         return (
-            <div id='login-signup-but'>
-                <div id='login-but' >
-              <button><Link to={'/login'} style={{ textDecoration: 'none' }}>Login</Link></button>
+            <div>
+              <div className="welcome-title">ColLab</div>
+              <div className='login-signup-but-container'>
+                <div className='login-but-container' >
+                  <button className='login-but'><Link className="login-but-text" to={'/login'} style={{ textDecoration: 'none' }}>Login</Link></button>
                 </div>
-                <div id='signup-but'>
-              <button><Link to={'/signup'} style={{ textDecoration: 'none' }}>Signup</Link></button>
+                <div className='signup-but-container'>
+                  <button className='signup-but'><Link className="signup-but-text" to={'/signup'} style={{ textDecoration: 'none' }}>Signup</Link></button>
                 </div>
-               
+              </div>
             </div>
         );
       }
@@ -41,13 +44,11 @@ class NavBar extends React.Component {
       return (
       <div className="splash-body">
         <div className='header'>
-            <div className="title">Welcome to ColLab</div>
-         
             <br/>
-              {this.getLinks()}
-         </div>
+            {this.getLinks()}
+        </div>
       </div>
-     
+
       );
   }
 }

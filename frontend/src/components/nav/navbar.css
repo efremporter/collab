@@ -1,37 +1,45 @@
-.splash-body{
-    /* background-color: grey; 
-    height: 100vh;  */
-}
 
-.title{
+.welcome-title{
     display: flex;
     justify-content: center;
-    color: blue 
+    font-family: ableton sans; 
+    font-size: 48px;
+    font-weight: 800;
 }
 
 .header {
     margin-top: 2rem;
 }
-#login-but button {
-    width: 5rem;
-    height: 2rem;
-    
-}
 
-#signup-but button { 
-    width: 5rem;
-    height:  2rem;
-}
-
-#login-signup-but {
+.login-signup-but-container {
     display:flex;
     justify-content: center;
-   
-}
-#login-but, #signup-but{
-     margin: 0px 10px 0px 10px;
 }
 
+.login-but-container, 
+.signup-but-container{
+    margin: 20px 20px 20px 20px;
+}
 
+.login-but-container button, 
+.signup-but-container button {
+    width: 6rem;
+    height: 3rem;
+    background-color: rgb(102, 98, 98);
+}
 
+.login-but:hover, 
+.signup-but:hover {
+    background-color: red;
+    cursor: pointer;
+}
 
+.login-but-text, 
+.signup-but-text {
+    color: white;
+}
+
+/* .login-but-text:hover, 
+.signup-but-text:hover {
+    color: black;
+} */

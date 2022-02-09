@@ -6,7 +6,7 @@ import MainPage from './main/main_page';
 import LoginFormContainer from './session/login_form_container';
 import SignupFormContainer from './session/signup_form_container.js';
 import Profile from './profile/profile';
-import FeedContainer from './profile/feed/feed_container';
+import FeedContainer from './feed/feed_container';
 
 const App = () => (
   <div>

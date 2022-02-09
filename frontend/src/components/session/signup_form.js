@@ -1,6 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import signup from './signup-login.css'
+import * as signupcss from './signup-login.css'
+
 class SignupForm extends React.Component {
   constructor(props) {
     super(props);
@@ -59,10 +60,10 @@ class SignupForm extends React.Component {
     
         <form className='signup-form' onSubmit={this.handleSubmit}>
           <div className="input-elements">
-            <div id='form-title'>Create an Account</div>
+            <div className='form-title'>Create an Account</div>
             <hr/>
             <br/>
-            <div id='email-bar'>Email 
+            <div className='email-bar'>Email 
                 <input 
                   type="text"
                   value={this.state.email}
@@ -71,16 +72,16 @@ class SignupForm extends React.Component {
                 />
             </div>
             <br/>
-            <div id="username-bar">Username 
+            <div className="username-bar">Username 
                 <input type="text"
-                  id="username-bar"
+                  className="username-bar"
                   value={this.state.handle}
                   onChange={this.update('handle')}
                   placeholder="▶"
                 />
             </div>
             <br/>
-          <div id="password-bar">Password 
+          <div className="password-bar">Password 
                 <input 
                   type="password"
                   value={this.state.password}
@@ -89,7 +90,7 @@ class SignupForm extends React.Component {
                 />
             </div>
             <br/>
-            <div id="password-bar">Confirm Password 
+            <div className="password-bar">Confirm Password 
                 <input 
                   type="password"
                   value={this.state.password2}
@@ -98,7 +99,7 @@ class SignupForm extends React.Component {
                 />
             </div>
             <br/>
-            <input id='form-but' type="submit" value="▶" />
+            <input className='form-but' type="submit" value="▶" />
             {this.renderErrors()}
           </div>
         </form>
