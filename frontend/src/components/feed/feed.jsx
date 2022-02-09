@@ -15,11 +15,11 @@ class Feed extends React.Component {
     return (
       <div>
         <div className="feed-title">Beats Feed: </div>
-        <div className="feed-beats-container">
-          {this.props.beats.map( (beat, idx) => {
-            return <FeedIndexItem key={idx} beat={beat} />
-          })}
-        </div>
+          <div className="feed-beats-container">
+            {this.props.beats.map( (beat, idx) => {
+              return <FeedIndexItem key={idx} beat={beat} />
+            })}
+          </div>
       </div>
     )
   }
