@@ -20,9 +20,9 @@ class NavBar extends React.Component {
             <div className="drop-down-menu">
               <button className='drop-down-menu-bt'>Menu</button>
               <div className='dropdown-content'>
-              <Link className='db-item' to={'/feed'} style={{ textDecoration: 'none' }} >All Beats</Link> 
-             <Link className='db-item' to={'/profile'} style={{ textDecoration: 'none' }} >Profile</Link>
-              <button className='db-item' id='logout-bt' onClick={this.logoutUser}>Logout</button>
+                <Link className='db-item' to={'/profile'} style={{ textDecoration: 'none' }} >PROFILE</Link>
+                <Link className='db-item' to={'/feed'} style={{ textDecoration: 'none' }} >FEED</Link> 
+                <button className='db-item' id='logout-bt' onClick={this.logoutUser}>LOGOUT</button>
               </div>
             </div>
         );
@@ -32,10 +32,10 @@ class NavBar extends React.Component {
               <div className="welcome-title">ColLab</div>
               <div className='login-signup-but-container'>
                 <div className='login-but-container' >
-                  <button className='login-but'><Link className="login-but-text" to={'/login'} style={{ textDecoration: 'none' }}>Login</Link></button>
+                <Link className='login-but' to={'/login'} style={{ textDecoration: 'none' }}><button className="login-but-text" >LOGIN</button></Link>
                 </div>
                 <div className='signup-but-container'>
-                  <button className='signup-but'><Link className="signup-but-text" to={'/signup'} style={{ textDecoration: 'none' }}>Signup</Link></button>
+                <Link className='signup-but' to={'/signup'} style={{ textDecoration: 'none' }}><button className="signup-but-text" >SIGNUP</button></Link>
                 </div>
               </div>
             </div>

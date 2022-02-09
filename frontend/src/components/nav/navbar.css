@@ -4,7 +4,7 @@
     justify-content: center;
     font-family: ableton sans; 
     font-size: 48px;
-    font-weight: 800;
+    font-weight: bold;
 }
 
 .header {
@@ -23,20 +23,21 @@
 
 .login-but-container button, 
 .signup-but-container button {
-    width: 6rem;
-    height: 3rem;
-    background-color: rgb(102, 98, 98);
+    width: 7rem;
+    height: 3.5rem;
+    background-color: #aaa0a0;
+    font-weight: bold;
 }
 
-.login-but:hover, 
-.signup-but:hover {
+.login-but-container button:hover, 
+.signup-but-container button:hover {
     background-color: red;
     cursor: pointer;
 }
 
 .login-but-text, 
 .signup-but-text {
-    color: white;
+    color: black;
 }
 
 /* .login-but-text:hover, 
@@ -46,50 +47,55 @@
 
 
 .drop-down-menu-bt {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  height: 3rem;
-  width: 7rem;
-  
-  
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    height: 3rem;
+    width: 7rem;
 }
 
 .drop-down-menu {
-  position: relative;
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-  position: absolute;
-  right: 1rem
+    position: relative;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    right: 1rem
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  width: 7rem;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    position: absolute;
+    background-color: #aaa0a0;
+    width: 7rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
 }
 
 .dropdown-content .db-item {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
-.dropdown-content .db-item:hover {background-color: #ddd;}
+.dropdown-content .db-item:hover {
+    background-color: red;
+}
 
-.drop-down-menu:hover .dropdown-content {display: block;}
+.drop-down-menu:hover .dropdown-content {
+    display: block;
+}
 
-.drop-down-menu:hover .drop-down-menu-bt {background-color: #3e8e41;} 
+.drop-down-menu:hover .drop-down-menu-bt {
+    background-color: #3e8e41;
+} 
 
 #logout-bt{
     border: none;
     padding-right: 2.9rem;
     font-size: 1rem;
+    background-color: #aaa0a0;
 }
 
