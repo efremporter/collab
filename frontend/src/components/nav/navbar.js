@@ -20,9 +20,9 @@ class NavBar extends React.Component {
             <div className="drop-down-menu">
               <button className='drop-down-menu-bt'>Menu</button>
               <div className='dropdown-content'>
-              <Link className='db-item' to={'/feed'} style={{ textDecoration: 'none' }} >All Beats</Link> 
-             <Link className='db-item' to={'/profile'} style={{ textDecoration: 'none' }} >Profile</Link>
-              <button className='db-item' id='logout-bt' onClick={this.logoutUser}>Logout</button>
+                <Link className='db-item' to={'/profile'} style={{ textDecoration: 'none' }} >PROFILE</Link>
+                <Link className='db-item' to={'/feed'} style={{ textDecoration: 'none' }} >FEED</Link> 
+                <button className='db-item' id='logout-bt' onClick={this.logoutUser}>LOGOUT</button>
               </div>
             </div>
         );
