@@ -48,13 +48,13 @@ class LoginForm extends React.Component {
   // Render the session errors if there are any
   renderErrors() {
     return(
-      <ul>
+      <div className="errors">
         {Object.keys(this.state.errors).map((error, i) => (
-          <li key={`error-${i}`}>
+          <div className="error" key={`error-${i}`}>
             {this.state.errors[error]}
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     );
   }
 
@@ -86,8 +86,8 @@ class LoginForm extends React.Component {
             <br/>
           <input className='form-but' type="submit" value="▶" />
             {this.renderErrors()}
-          </div>
-        </form>
+        </div>
+      </form>
       
     );
   }

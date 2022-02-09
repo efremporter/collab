@@ -14,12 +14,12 @@ class BeatsIndex extends React.Component {
     console.log(this.props)
     return (
       <div>
-        <div>This is the profile beats index!</div>
-        <ul>
+        <div>All YOUR BEATS</div>
+        <div>
           {this.props.beats.map( (beat, idx) => {
             return <BeatsIndexItem key={idx} beat={beat} />
           })}
-        </ul>
+        </div>
       </div>
     )
   }
