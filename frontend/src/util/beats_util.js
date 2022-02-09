@@ -11,3 +11,7 @@ export const fetchBeat = beatId => {
 export const fetchAllBeats = () => {
   return axios.get('/api/beats')
 }
+
+export const createBeat = beat => {
+  return axios.post('/api/beats', beat)
+}

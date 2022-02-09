@@ -1,5 +1,5 @@
 form{
-    border: 1px solid white;
+    border: 1px solid red;
     box-sizing: border-box;
     padding: 16px;
 
@@ -47,7 +47,7 @@ input[type=text], input[type=password] {
 }
 
 hr {
-  border: 0.5px solid #f1f1f1;
+  border: 0.5px solid red;
   margin-bottom: 25px;
   
 }
@@ -58,7 +58,6 @@ div{
 }
 
 body{
- 
   background: url("../../images/enoc-valenzuela-5n3voxk3JDU-unsplash.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -85,4 +84,14 @@ body{
   color: black;
   border-color: red;
   cursor: pointer;
+}
+
+
+.errors {
+  padding: 10px 0px 10px 0px;
+}
+
+.error {
+  padding: 10px 0px 10px 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
