@@ -23,10 +23,15 @@ export const fetchBeats = userId => dispatch => {
 
 export const fetchBeat = beatId => dispatch => {
   APIUtil.fetchBeat(beatId)
-  .then( beat => dispatch(receiveBeat(beat)))
+  .then(beat => dispatch(receiveBeat(beat)))
 }
 
 export const fetchAllBeats = () => dispatch => {
   APIUtil.fetchAllBeats()
   .then(beats => dispatch(receiveBeats(beats)))
+}
+
+export const createBeat = beat => dispatch => {
+  APIUtil.createBeat(beat)
+  .then(beat => dispatch(receiveBeat(beat)))
 }

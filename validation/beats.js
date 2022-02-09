@@ -7,8 +7,8 @@ module.exports = function validateBeatInput(data) {
   data.title = validText(data.title) ? data.title : '';
   data.file = validText(data.file) ? data.file : '';
 
-  if (!Validator.isLength(data.title, { min: 5, max: 140 })) {
-    errors.title = 'Beat must be between 5 and 140 characters';
+  if (!Validator.isLength(data.title, { min: 2, max: 140 })) {
+    errors.title = 'Beat title must be between 2 and 140 characters';
   }
 
   if (Validator.isEmpty(data.title)) {
