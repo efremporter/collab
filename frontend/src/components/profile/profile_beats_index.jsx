@@ -11,9 +11,9 @@ class BeatsIndex extends React.Component {
   }
 
   play() {
-    const beat = new Audio('/Users/efrem/Desktop/collab/frontend/src/components/profile/beat.mp3');
-    console.log(beat);
+    const beat = new Audio('/Users/efrem/Desktop/collab/frontend/src/components/profile/beat.mp3'); 
     beat.play();
+    console.log(beat);
   }
 
   handleSubmit() {
