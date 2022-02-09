@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import * as logincss from './signup-login.css'
 
 class LoginForm extends React.Component {
   constructor(props) {
@@ -59,14 +60,14 @@ class LoginForm extends React.Component {
 
   render() {
     return (
-   
+
       <form className='signup-form' onSubmit={this.handleSubmit}>
         <div className='input-elements'>
-          <div id='form-title'>Create an Account</div>
+          <div className='form-title'>Login</div>
           <hr/>
-          <div id="email-bar">Email
+          <div className="email-bar">Email
               <input
-                id="email-bar"
+                className="email-bar"
                 type="text"
                 value={this.state.email}
                 onChange={this.update('email')}
@@ -74,7 +75,7 @@ class LoginForm extends React.Component {
               />
           </div>
             <br/>
-          <div id="password-bar">Password
+          <div className="password-bar">Password
               <input 
                 type="password"
                 value={this.state.password}
@@ -83,7 +84,7 @@ class LoginForm extends React.Component {
               />
           </div>
             <br/>
-          <input id='form-but' type="submit" value="▶" />
+          <input className='form-but' type="submit" value="▶" />
             {this.renderErrors()}
           </div>
         </form>

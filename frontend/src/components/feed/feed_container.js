@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { fetchAllBeats } from "../../../actions/beat_actions";
+import { fetchAllBeats } from "../../actions/beat_actions";
 import Feed from './feed';
 
 const mSTP = state => {

@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import FeedIndexItem from './feed_index_item';
+import * as feedcss from "./feed.css";
 
 class Feed extends React.Component {
   constructor(props) {
@@ -13,8 +14,8 @@ class Feed extends React.Component {
   render() {
     return (
       <div>
-        <h2>This is the feed!</h2>
-        <div>
+        <div className="feed-title">Beats Feed: </div>
+        <div className="feed-beats-container">
           {this.props.beats.map( (beat, idx) => {
             return <FeedIndexItem key={idx} beat={beat} />
           })}
