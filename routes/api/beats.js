@@ -52,20 +52,19 @@ router.post('/', passport.authenticate('jwt', { session: false }), upload.single
         return res.status(400).json(errors);
       }
       const file = req.file;
-      let beatUrl
       uploadFile(file)
-      .then(res => {
-        console.log(res.key)
-        beatUrl = res.key
+      .then(response => {
+        let beatUrl = response.Key
 
+        const newBeat = new Beat({
+          title: req.body.title,
+          file: req.file,
+          user: req.user.id,
+        });
+        console.log('path', newBeat.file.path)
+        
+        newBeat.save().then(beat => res.json(beat));
       })
-      const newBeat = new Beat({
-        title: req.body.title,
-        file: req.file,
-        user: req.user.id
-      });
-      
-      newBeat.save().then(beat => res.json(beat));
     }
   );
 

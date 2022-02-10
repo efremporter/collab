@@ -1,6 +1,7 @@
 import React from 'react';
 import FeedIndexItem from './feed_index_item';
 import * as feedcss from "./feed.css";
+import Profile from '../profile/profile';
 
 class Feed extends React.Component {
   constructor(props) {
