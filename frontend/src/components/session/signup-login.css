@@ -1,6 +1,6 @@
 form{
-    border: 1px solid red;
-    box-sizing: border-box;
+    /* border: 1px solid red;
+    box-sizing: border-box; */
     padding: 16px;
 
     margin-top: 1rem;
@@ -19,12 +19,20 @@ input[type=text], input[type=password] {
   border-radius: 1rem;
 }
 
-.form-title{
+.form-title-login{
   color: white;
-  display: flex;
-  justify-content: center;
-  left: 20rem;
+  position: relative;
+  left: 21rem;
+  font-size: 1.5rem;
 }
+
+.form-title-signup{
+    color: white;
+  position: relative;
+  left: 11rem;
+  font-size: 1.5rem;
+}
+
 
 
 ::placeholder{
@@ -46,11 +54,11 @@ input[type=text], input[type=password] {
   outline: none;
 }
 
-hr {
+/* hr {
   border: 0.5px solid red;
   margin-bottom: 25px;
   
-}
+} */
 
 div{
   color: white;
@@ -67,16 +75,17 @@ body{
 }
 
 .form-but{
-  width: 7rem;
-  height: 3.5rem;
-  border-color: #aaa0a0;
-  background-color: #aaa0a0;
-  color: black;
-  font-size: 1.2rem;
-  border-radius: 0.1rem;
-  display:flex;
-  justify-content: center;
-
+  width: 64.5%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: block;
+  border: none;
+  background: #aaa0a0;
+  border-radius: 1rem;
+  font-weight: 530;
+  font-size: 18px;
+  position: relative;
+  top: 0.8rem;
 }
 
 .form-but:hover {
