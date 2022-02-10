@@ -1,0 +1,41 @@
+
+.profile-title {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0 0 0;
+    font-size: 3rem;
+}
+
+
+/* PROFILE POST */
+.profile-post-beat-container {
+    display: block;
+    padding-left: 5rem;
+}
+
+
+
+
+
+
+/* PROFILE INDEX */
+.profile-index-container {
+    /* background-color: blue; */
+    padding-left: 5rem;
+}
+
+.profile-index-title {
+
+    font-size: 2rem;
+}
+
+.profile-index-beat {
+    font-size: 1rem;
+}
+
+.profile-index-beat-title {
+    font-size: 1rem;
+}
+.profile-index-beat-date {
+    font-size: 1rem;
+}
