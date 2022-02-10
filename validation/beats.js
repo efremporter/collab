@@ -3,9 +3,8 @@ const validText = require('./valid_text');
 
 module.exports = function validateBeatInput(data) {
   let errors = {};
-
+  console.log(data.file)
   data.title = validText(data.title) ? data.title : '';
-  data.file = validText(data.file) ? data.file : '';
 
   if (!Validator.isLength(data.title, { min: 2, max: 140 })) {
     errors.title = 'Beat title must be between 2 and 140 characters';
@@ -15,8 +14,9 @@ module.exports = function validateBeatInput(data) {
     errors.title = 'Title field is required';
   }
 
-  if (Validator.isEmpty(data.file)) {
-    errors.file = 'File field is required'
+  if (!data.file || !data.file instanceof Object) {
+    console.log('data', data.file)
+    errors.file = 'File is invalid'
   }
 
   return {

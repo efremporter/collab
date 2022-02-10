@@ -9,7 +9,7 @@ form{
     margin-left: 1rem
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password]{
   width: 60%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -21,15 +21,16 @@ input[type=text], input[type=password] {
 
 .form-title-login{
   color: white;
-  position: relative;
-  left: 21rem;
+  position: absolute;
+
+  left: 17.5%;
   font-size: 1.5rem;
 }
 
 .form-title-signup{
     color: white;
-  position: relative;
-  left: 11rem;
+  position: absolute;
+  left: 10%;
   font-size: 1.5rem;
 }
 
@@ -77,7 +78,7 @@ body{
 .form-but{
   width: 64.5%;
   padding: 15px;
-  margin: 5px 0 22px 0;
+  margin: 5px;
   display: block;
   border: none;
   background: #aaa0a0;
