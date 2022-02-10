@@ -1,4 +1,4 @@
-import { RECEIVE_BEATS, RECEIVE_BEAT, REMOVE_BEAT } from "../actions/beat_actions";
+import { RECEIVE_BEATS, RECEIVE_BEAT, REMOVE_BEAT} from "../actions/beat_actions";
 
 const BeatsReducer = (state={}, action) => {
 
