@@ -16,6 +16,7 @@ export const createBeat = beat => {
   let formData = new FormData();
   for (let key in beat) {
     formData.append(key, beat[key])
+    // formData[key] = beat[key]
   }
   return axios.post('/api/beats', formData, {headers: { "Content-Type": "multipart/form-data" }})
   // ({method: 'POST', url: '/api/beats', data: formData, headers: { "Content-Type": "multipart/form-data" }})
