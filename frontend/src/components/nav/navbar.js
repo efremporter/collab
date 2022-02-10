@@ -39,9 +39,11 @@ class NavBar extends React.Component {
                 <Link className='signup-but' to={'/signup'} style={{ textDecoration: 'none' }}><button className="signup-but-text" >SIGNUP</button></Link>
                 </div>
               </div>
-            <img className="github-logo" id="github-logo-1" src={require('../../images/github-icon-png-29.jpg.png')} />
-            <img className="github-logo" id="github-logo-2" src={require('../../images/github-icon-png-29.jpg.png')} />
-            <img className="github-logo" id="github-logo-3" src={require('../../images/github-icon-png-29.jpg.png')} />
+            <div className="github-logo">
+                <img  id="github-logo-1" src={require('../../images/github-icon-png-29.jpg.png')} />
+                <img id="github-logo-2" src={require('../../images/github-icon-png-29.jpg.png')} />
+                <img id="github-logo-3" src={require('../../images/github-icon-png-29.jpg.png')} />
+            </div>
             </div>
         );
       }

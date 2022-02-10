@@ -8,31 +8,12 @@
      opacity: 0.68
 }
 
- .github-logo{
-    /* position: relative;
-    left: 90%; */
-    height: 3rem;
-} 
+.github-logo{
 
-/* #github-logo-1{
-    position: relative;
-    top: 10%
- 
-}   */
-
-/* #github-logo-2{
-    position: relative;
-    left: 80%;
-    bottom: 100%
-} 
-
-
-#github-logo-3{
-    position: relative;
-    right: 15%;
-    bottom: 42%
-}  */
-
+}
+#githhub-logo-1{
+    height: 1rem;
+}
 
 .header {
     margin-top: 2rem;
