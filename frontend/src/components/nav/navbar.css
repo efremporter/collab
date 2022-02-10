@@ -1,10 +1,11 @@
-
 .welcome-title{
-    display: flex;
-    justify-content: center;
-    font-family: ableton sans; 
-    font-size: 48px;
-    font-weight: bold;
+   display: flex;
+   justify-content: center;
+}
+#logo{
+    height: 13rem;
+    border-radius: 3rem;
+     opacity: 0.68
 }
 
 .header {
@@ -13,7 +14,9 @@
 
 .login-signup-but-container {
     display:flex;
-    justify-content: center;
+    position: relative;
+    bottom: 4rem;
+    /* justify-content: center; */
 }
 
 .login-but-container, 
@@ -27,6 +30,7 @@
     height: 3.5rem;
     background-color: #aaa0a0;
     font-weight: bold;
+    border-radius: 0.5rem;
 }
 
 .login-but-container button:hover, 
