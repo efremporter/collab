@@ -21,9 +21,9 @@ input[type=text], input[type=password]{
 
 .form-title-login{
   color: white;
-  position: relative;
-  /* left: 21rem; */
-  margin-left: 20%;
+  position: absolute;
+
+  left: 17.5%;
   font-size: 1.5rem;
 }
 
