@@ -1,11 +1,11 @@
 import axios from 'axios';
 
 export const fetchBeats = userId => {
-  return axios.get(`/api/beats/${userId}`, userId);
+  return axios.get(`/api/beats/${userId}`);
 };
 
 export const fetchBeat = beatId => {
-  return axios.get('/api/beats/:beat_id', beatId)
+  return axios.get(`/api/beats/${beatId}`)
 }
 
 export const fetchAllBeats = () => {
@@ -13,5 +13,14 @@ export const fetchAllBeats = () => {
 }
 
 export const createBeat = beat => {
-  return axios.post('/api/beats', beat)
+  let formData = new FormData();
+  for (let key in beat) {
+    formData.append(key, beat[key])
+  }
+  return axios.post('/api/beats', formData, {headers: { "Content-Type": "multipart/form-data" }})
+  // ({method: 'POST', url: '/api/beats', data: formData, headers: { "Content-Type": "multipart/form-data" }})
+}
+
+export const deleteBeat = beatId => {
+  return axios.delete(`/api/beats/${beatId}`)
 }
