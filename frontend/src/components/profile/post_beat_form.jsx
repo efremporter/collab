@@ -13,8 +13,11 @@ class PostBeatForm extends React.Component {
 
   handleChange(key) {
     return e => {
-      this.setState({[key]: e.currentTarget.value}, () => {
-      })
+      if (key === 'title') {
+        this.setState({[key]: e.currentTarget.value})
+      } else {
+        this.setState({[key]: e.target.files[0]})
+      }
     }
   }
 
