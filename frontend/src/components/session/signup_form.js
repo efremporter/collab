@@ -60,8 +60,8 @@ class SignupForm extends React.Component {
     
         <form className='signup-form' onSubmit={this.handleSubmit}>
           <div className="input-elements">
-            <div className='form-title'>CREATE AN ACCOUNT</div>
-            <hr/>
+            <div className='form-title-signup'>CREATE AN ACCOUNT</div>
+            {/* <hr/> */}
             <br/>
             <div className='email-bar'>EMAIL
                 <input 
@@ -99,7 +99,9 @@ class SignupForm extends React.Component {
                 />
             </div>
             <br/>
-            <input className='form-but' type="submit" value="▶" />
+            <div className="submit-bar">
+            <input className='form-but' type="submit" value="SUBMIT" />
+            </div> 
             {this.renderErrors()}
           </div>
         </form>
