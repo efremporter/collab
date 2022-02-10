@@ -3,6 +3,7 @@ import ProfileBeatsIndexContainer from './profile_beats_index_container';
 import PostBeatFormContainer from './post_beat_form_container';
 import * as profilecss from './profile.css'
 
+
 class Profile extends React.Component {
   constructor(props) {
     super(props)
@@ -11,9 +12,9 @@ class Profile extends React.Component {
   render() {
     return (
       <div>
-        <div className='profile-title'>Profile</div>
+        <div className='profile-title'>{this.props.currentUser.handle}'s Profile</div>
         <PostBeatFormContainer />
-        <ProfileBeatsIndexContainer />
+        <ProfileBeatsIndexContainer currentUser={this.props.currentUser} />
       </div>
     )
   }
