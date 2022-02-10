@@ -29,7 +29,7 @@ class NavBar extends React.Component {
       } else {
         return (
             <div>
-            <div className="welcome-title"><img id="logo" src={require('../../images/collab-2.png')} /></div>
+            
            
               <div className='login-signup-but-container'>
                 <div className='login-but-container' >
@@ -39,7 +39,9 @@ class NavBar extends React.Component {
                 <Link className='signup-but' to={'/signup'} style={{ textDecoration: 'none' }}><button className="signup-but-text" >SIGNUP</button></Link>
                 </div>
               </div>
-            
+            <img className="github-logo" id="github-logo-1" src={require('../../images/github-icon-png-29.jpg.png')} />
+            <img className="github-logo" id="github-logo-2" src={require('../../images/github-icon-png-29.jpg.png')} />
+            <img className="github-logo" id="github-logo-3" src={require('../../images/github-icon-png-29.jpg.png')} />
             </div>
         );
       }
@@ -49,6 +51,7 @@ class NavBar extends React.Component {
       return (
       <div className="splash-body">
         <div className='header'>
+            <div className="welcome-title"><img id="logo" src={require('../../images/collab-2.png')} /></div>
             <br/>
             {this.getLinks()}
         </div>
