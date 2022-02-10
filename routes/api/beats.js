@@ -4,7 +4,6 @@ const upload = multer({ dest: 'uploads/' });
 const router = express.Router();
 const mongoose = require('mongoose');
 const passport = require('passport');
-
 const Beat = require('../../models/Beat');
 const validateBeatInput = require('../../validation/beats');
 
@@ -42,8 +41,8 @@ router.delete('/:id', (req, res) => {
 });
 
 router.post('/', passport.authenticate('jwt', { session: false }), upload.single('file'), (req, res) => {
-      console.log(req.file)
-      const { errors, isValid } = validateBeatInput(req.body);
+      const input = {file: req.file, title: req.body.title, user: req.user};
+      const { errors, isValid } = validateBeatInput(input);
   
       if (!isValid) {
         return res.status(400).json(errors);
@@ -51,9 +50,10 @@ router.post('/', passport.authenticate('jwt', { session: false }), upload.single
   
       const newBeat = new Beat({
         title: req.body.title,
-        file: req.body.file,
+        file: req.file,
         user: req.user.id
       });
+      
       newBeat.save().then(beat => res.json(beat));
     }
   );
