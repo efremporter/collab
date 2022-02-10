@@ -1,4 +1,4 @@
-import { RECEIVE_BEATS, RECEIVE_BEAT } from "../actions/beat_actions";
+import { RECEIVE_BEATS, RECEIVE_BEAT, REMOVE_BEAT } from "../actions/beat_actions";
 
 const BeatsReducer = (state={}, action) => {
 
@@ -8,10 +8,17 @@ const BeatsReducer = (state={}, action) => {
   switch(action.type) {
 
     case RECEIVE_BEATS:
-      return action.beats
+      action.beats.forEach((beat, idx) => {
+        nextState[beat._id] = beat;
+      })
+      return nextState;
 
     case RECEIVE_BEAT:
-      nextState[action.beat.id] = action.beat;
+      nextState[action.beat._id] = action.beat;
+      return nextState;
+
+    case REMOVE_BEAT:
+      delete nextState[action.beatId]
       return nextState;
 
     default:

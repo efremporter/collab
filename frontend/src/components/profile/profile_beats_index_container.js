@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { fetchBeats } from '../../actions/beat_actions';
+import { fetchBeats, deleteBeat } from '../../actions/beat_actions';
 import ProfileBeatsIndex from './profile_beats_index';
 
 const mSTP = state => {
@@ -11,7 +11,8 @@ const mSTP = state => {
 
 const mDTP = dispatch => {
   return {
-    fetchBeats: userId => dispatch(fetchBeats(userId))
+    fetchBeats: userId => dispatch(fetchBeats(userId)),
+    deleteBeat: beatId => dispatch(deleteBeat(beatId))
   }
 }
 
