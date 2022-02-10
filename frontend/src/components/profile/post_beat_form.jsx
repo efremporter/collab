@@ -33,6 +33,8 @@ class PostBeatForm extends React.Component {
       this.setState({title: '', file: this.state.file, user: this.props.currentUser})
     } else if (invalidFile) {
       this.setState({title: this.state.title, file: null, user: this.props.currentUser})
+    } else {
+      this.setState({title: '', file: null, user: this.props.currentUser})
     }
   }
 

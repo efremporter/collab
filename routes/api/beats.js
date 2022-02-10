@@ -40,6 +40,10 @@ router.delete('/:id', (req, res) => {
     );
 });
 
+const { uploadFile } = require('../../s3')
+
+const app = express();
+
 router.post('/', passport.authenticate('jwt', { session: false }), upload.single('file'), (req, res) => {
       const input = {file: req.file, title: req.body.title, user: req.user};
       const { errors, isValid } = validateBeatInput(input);
@@ -47,7 +51,14 @@ router.post('/', passport.authenticate('jwt', { session: false }), upload.single
       if (!isValid) {
         return res.status(400).json(errors);
       }
-  
+      const file = req.file;
+      let beatUrl
+      uploadFile(file)
+      .then(res => {
+        console.log(res.key)
+        beatUrl = res.key
+
+      })
       const newBeat = new Beat({
         title: req.body.title,
         file: req.file,

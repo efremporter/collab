@@ -8,10 +8,11 @@ const BeatsReducer = (state={}, action) => {
   switch(action.type) {
 
     case RECEIVE_BEATS:
-      action.beats.forEach((beat, idx) => {
-        nextState[beat._id] = beat;
+      let hash = {}
+      action.beats.forEach(beat => {
+        hash[beat._id] = beat;
       })
-      return nextState;
+      return hash;
 
     case RECEIVE_BEAT:
       nextState[action.beat._id] = action.beat;
