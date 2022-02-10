@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Profile from '../profile/profile';
 
 class FeedIndexItem extends React.Component {
   constructor(props) {
@@ -37,6 +39,7 @@ class FeedIndexItem extends React.Component {
         <div className="feed-beat-date">
           {this.parseDate()}
         </div>
+        <Link to='/api/users'></Link>
       </div>
     )
   }
