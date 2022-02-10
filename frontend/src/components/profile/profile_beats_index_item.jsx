@@ -1,6 +1,6 @@
 import React from 'react'
 
-class BeatsIndexItem extends React.Component {
+class ProfileBeatsIndexItem extends React.Component {
   constructor(props) {
     super(props)
   }
@@ -28,6 +28,10 @@ class BeatsIndexItem extends React.Component {
     return `${hour}:${minute} ${AMPM}  ${month}/${day}/${year[0].slice(2)}`
   }
 
+  delete() {
+    this.props.deleteBeat(this.props.beat._id)
+  }
+
   
   render() {
     // if (!this.props.beat) return null;
@@ -39,9 +43,10 @@ class BeatsIndexItem extends React.Component {
         <div className="profile-beat-date">
           {this.parseDate()}
         </div>
+        <button onClick={this.delete.bind(this)}>Delete</button>
       </div>
     )
   }
 }
 
-export default BeatsIndexItem
+export default ProfileBeatsIndexItem

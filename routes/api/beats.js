@@ -32,8 +32,17 @@ router.get('/:id', (req, res) => {
     );
 });
 
-router.post('/', passport.authenticate('jwt', { session: false }), (req, res) => {
+router.delete('/:id', (req, res) => {
+  Beat.findById(req.params.id)
+    .then(beat => beat.remove())
+    .then(res.json('Success'))
+    .catch(err =>
+        res.status(404).json({ nobeatsfound: 'No beat found with that ID' })
+    );
+});
 
+router.post('/', passport.authenticate('jwt', { session: false }), upload.single('file'), (req, res) => {
+      console.log(req.file)
       const { errors, isValid } = validateBeatInput(req.body);
   
       if (!isValid) {
@@ -45,7 +54,6 @@ router.post('/', passport.authenticate('jwt', { session: false }), (req, res) =>
         file: req.body.file,
         user: req.user.id
       });
-      console.log('POSTPOSTPOST')
       newBeat.save().then(beat => res.json(beat));
     }
   );
