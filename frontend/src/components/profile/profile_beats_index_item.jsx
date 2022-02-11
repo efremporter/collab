@@ -49,8 +49,6 @@ class ProfileBeatsIndexItem extends React.Component {
         <div className="profile-index-beat-date">
           {this.parseDate()}
         </div>
-        {/* <img src="c.jpeg" alt="" /> */}
-        {/* <img src={`/api/beats/stream/${this.props.beat.file}`}/> */}
         <audio controls>
           <source src={`/api/beats/stream/${this.props.beat.file}`}/>
         </audio>
