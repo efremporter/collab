@@ -4,7 +4,6 @@ import ProfileBeatsIndex from './profile_beats_index';
 
 const mSTP = state => {
   return {
-    userId: state.session.user.id,
     beats: Object.values(state.beats)
   }
 }

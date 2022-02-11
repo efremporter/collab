@@ -21,7 +21,7 @@ class ProfileBeatsIndex extends React.Component {
         <div className='profile-index-title'>{this.props.currentUser.handle}'s Beats</div>
         <div className='profile-index-beats-container'>
           {this.props.beats.map( (beat, idx) => {
-            return <ProfileBeatsIndexItem delete={this.sameUser()} deleteBeat={this.props.deleteBeat} key={idx} beat={beat} />
+            return <ProfileBeatsIndexItem id={this.props.id} user={this.props.user} delete={this.sameUser()} deleteBeat={this.props.deleteBeat} key={idx} beat={beat} />
           })}
         </div>
       </div>
