@@ -43,6 +43,11 @@ class ProfileBeatsIndexItem extends React.Component {
         <div className="profile-beat-date">
           {this.parseDate()}
         </div>
+        {/* <img src="c.jpeg" alt="" /> */}
+        {/* <img src={`/api/beats/stream/${this.props.beat.file}`}/> */}
+        <audio controls>
+          <source src={`/api/beats/stream/${this.props.beat.file}`}/>
+        </audio>
         <button onClick={this.delete.bind(this)}>Delete</button>
       </div>
     )
