@@ -38,7 +38,7 @@ class ProfileBeatsIndexItem extends React.Component {
   render() {
     let button = null
     if (this.props.delete) {
-      button = <button onClick={this.delete.bind(this)}>Delete</button>
+      button = <button className="profile-delete-but" onClick={this.delete.bind(this)}>Delete</button>
     }
     return (
       <div className="profile-index-beat">

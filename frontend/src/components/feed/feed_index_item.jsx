@@ -30,7 +30,7 @@ class FeedIndexItem extends React.Component {
       hour = `${PMHour}`
       AMPM = "PM"
     }
-    return `${hour}:${minute} ${AMPM}  ${month}/${day}/${year[0].slice(2)}`
+    return `${month}/${day}/${year[0].slice(2)} ${hour}:${minute} ${AMPM}`
   }
 
   render() {
