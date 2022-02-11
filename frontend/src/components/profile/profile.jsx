@@ -9,14 +9,28 @@ class Profile extends React.Component {
     super(props)
   }
 
+  componentDidMount() {
+    this.props.fetchUser(this.props.userId)
+  }
+
   render() {
-    return (
-      <div>
-        <div className='profile-title'>{this.props.currentUser.handle}'s Profile</div>
-        <PostBeatFormContainer />
-        <ProfileBeatsIndexContainer currentUser={this.props.currentUser} />
+    if (!this.props.user) return null;
+    if (this.props.currentUser.id === this.props.userId) {
+      return (
+        <div>
+          <div className='profile-title'>{this.props.currentUser.handle}'s Profile</div>
+          <PostBeatFormContainer />
+          <ProfileBeatsIndexContainer id={this.props.currentUser.id} currentUser={this.props.currentUser} />
+        </div>
+      )
+    } else {
+      return (
+        <div>
+          <div className='profile-title'>{this.props.user.handle}'s Profile</div>
+          <ProfileBeatsIndexContainer id={this.props.user._id} currentUser={this.props.user} />
       </div>
-    )
+      )
+    }
   }
 }
 

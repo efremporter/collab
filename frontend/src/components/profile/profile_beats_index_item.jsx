@@ -33,9 +33,13 @@ class ProfileBeatsIndexItem extends React.Component {
     this.props.deleteBeat(this.props.beat._id)
   }
 
+
   
   render() {
-    // if (!this.props.beat) return null;
+    let button = null
+    if (this.props.delete) {
+      button = <button onClick={this.delete.bind(this)}>Delete</button>
+    }
     return (
       <div className="profile-index-beat">
         <div className="profile-index-beat-title">
@@ -49,7 +53,7 @@ class ProfileBeatsIndexItem extends React.Component {
         <audio controls>
           <source src={`/api/beats/stream/${this.props.beat.file}`}/>
         </audio>
-        <button onClick={this.delete.bind(this)}>Delete</button>
+        {button}
       </div>
     )
   }

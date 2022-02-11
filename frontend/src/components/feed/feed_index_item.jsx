@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Profile from '../profile/profile';
 
 class FeedIndexItem extends React.Component {
   constructor(props) {
     super(props)
+  }
+
+  componentDidMount() {
+    this.props.fetchUser(this.props.beat.user)
   }
 
   parseDate() {
@@ -33,13 +36,13 @@ class FeedIndexItem extends React.Component {
   render() {
     return (
       <div className="feed-beat">
-        <div className="feed-beat-title">
-          {this.props.beat.title}
-        </div> 
+        <Link to={`/profile/${this.props.beat.user}`}><div className="feed-beat-title">{this.props.beat.title}</div></Link>
         <div className="feed-beat-date">
           {this.parseDate()}
         </div>
-        <Link to='/api/users'></Link>
+        <audio controls>
+          <source src={`/api/beats/stream/${this.props.beat.file}`}/>
+        </audio>
       </div>
     )
   }
