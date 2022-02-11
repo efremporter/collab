@@ -7,14 +7,14 @@
 .profile-title {
     display: flex;
     justify-content: center;
-    padding: 5rem 0 0 0;
+    padding: 2rem 0 0 0;
     font-size: 3rem;
 }
 
 /* PROFILE POST */
 .profile-post-beat-title {
     font-size: 2rem;
-    padding: 4rem 0 0 5rem;
+    padding: 2rem 0 0 5rem;
 }
 
 .profile-post-beat-container {
@@ -91,5 +91,5 @@
 
 .profile-delete-but {
     display: flex;
-    margin: 0.8rem 0 1rem 0;
+    margin: 0.8rem 0 1rem 0.2rem;
 }
