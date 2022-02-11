@@ -29,6 +29,7 @@ class NavBar extends React.Component {
       } else {
         return (
           <div>
+            <div className="creators-info">
             <span className="github-logo">
               <a href={"https://github.com/zackalsiday"}><img id="github-logo-1" src={require('../../images/github-icon-png-29.jpg.png')} /></a>
               <br/>
@@ -64,6 +65,7 @@ class NavBar extends React.Component {
               {/* <br /> */}
               <p id="Daniel-Bai-ad"> danielbai@gmail.com</p>
             </span>
+            </div>
          
               <div className='login-signup-but-container'>
                 <div className='login-but-container' >
