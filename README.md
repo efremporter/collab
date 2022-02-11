@@ -1,5 +1,7 @@
 # Collab Project
 
+Collab Live Link: https://collab-aa.herokuapp.com/#/
+
 Collab is a platform that allows artists and musicians to collaborate and make music together. Producers can upload beats or sounds onto their profile, and other artists/producers can create their own versions, and post them underneath the original!
 
 ## Background and Overview
@@ -42,5 +44,3 @@ Using collab, artists can:
 - Zack Alsiday (Mainly frontend)
 - Daniel Bai (Frontend & backend)
 - Efrem Porter (Mainly backend)
-
-<!-- hello -->
