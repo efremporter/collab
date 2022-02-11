@@ -12,7 +12,6 @@ class ProfileBeatsIndex extends React.Component {
   }
 
   render() {
-    console.log(this.props)
     return (
       <div className='profile-index-container'>
         <div className='profile-index-title'>{this.props.currentUser.handle}'s Beats</div>

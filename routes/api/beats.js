@@ -7,6 +7,9 @@ const passport = require('passport');
 const Beat = require('../../models/Beat');
 const validateBeatInput = require('../../validation/beats');
 const { uploadFile, getFileStream } = require('../../s3')
+const fs = require('fs')
+const util = require('util')
+const unlinkFile = util.promisify(fs.unlink)
 
 router.get('/', (req, res) => {
     Beat.find()
@@ -34,7 +37,6 @@ router.get('/:user_id', (req, res) => {
     });
     
 router.get('/stream/:id', (req, res) => {
-      // console.log(beat)
       const key = req.params.id
       const readStream = getFileStream(key)
       readStream.pipe(res)
@@ -54,7 +56,6 @@ router.delete('/:id', (req, res) => {
 const app = express();
 
 router.post('/', passport.authenticate('jwt', { session: false }), upload.single('file'), (req, res) => {
-      console.log('HERE')
       const input = {file: req.file, title: req.body.title, user: req.user};
       const { errors, isValid } = validateBeatInput(input);
   
@@ -64,15 +65,15 @@ router.post('/', passport.authenticate('jwt', { session: false }), upload.single
       const file = req.file;
       uploadFile(file)
       .then(response => {
-        console.log(response.Location)
         let beatUrl = response.Key
-  
+
         const newBeat = new Beat({
           title: req.body.title,
           file: beatUrl,
           user: req.user.id,
       });
         newBeat.save().then(beat => res.json(beat));
+        unlinkFile(file.path)
       })
     }
   );

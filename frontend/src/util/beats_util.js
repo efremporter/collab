@@ -13,7 +13,6 @@ export const fetchAllBeats = () => {
 }
 
 export const createBeat = beat => {
-  console.log('UTIL')
   let formData = new FormData();
   for (let key in beat) {
     formData.append(key, beat[key])
