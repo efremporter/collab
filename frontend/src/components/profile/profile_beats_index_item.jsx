@@ -1,4 +1,5 @@
 import React from 'react'
+import * as profilecss from './profile.css'
 
 class ProfileBeatsIndexItem extends React.Component {
   constructor(props) {
@@ -36,11 +37,11 @@ class ProfileBeatsIndexItem extends React.Component {
   render() {
     // if (!this.props.beat) return null;
     return (
-      <div className="profile-beat">
-        <div className="profile-beat-title">
+      <div className="profile-index-beat">
+        <div className="profile-index-beat-title">
           {this.props.beat.title}
         </div> 
-        <div className="profile-beat-date">
+        <div className="profile-index-beat-date">
           {this.parseDate()}
         </div>
         {/* <img src="c.jpeg" alt="" /> */}
