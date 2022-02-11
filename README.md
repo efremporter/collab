@@ -19,7 +19,7 @@ Using collab, artists can:
 ## Functionality & MVP
 - Users can sign up, login, logout, and delete their account
 - Users can play beats/songs (audio files) on their feed & on profiles
-- Users can upload beats/songs to their profile and other's, and delete beats/songs from their own profile
+- Users can upload beats/songs to their profile, and delete beats/songs from their own profile
 - Users can post/delete their versions of songs underneath the original
 - Users can upvote/downvote songs
 - Users can follow other users
