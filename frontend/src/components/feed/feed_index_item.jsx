@@ -36,13 +36,15 @@ class FeedIndexItem extends React.Component {
   render() {
     return (
       <div className="feed-beat">
-        <Link to={`/profile/${this.props.beat.user}`}><div className="feed-beat-title">{this.props.beat.title}</div></Link>
-        <div className="feed-beat-date">
-          {this.parseDate()}
-        </div>
+        <div className="feed-beat-content">
+          <Link to={`/profile/${this.props.beat.user}`}style={{ textDecoration: 'none' }}><h1 className="feed-beat-title">{this.props.beat.title}</h1></Link>
         <audio controls>
-          <source src={`/api/beats/stream/${this.props.beat.file}`}/>
+          <source  src={`/api/beats/stream/${this.props.beat.file}`}/>
         </audio>
+          <div className="feed-beat-date">
+            {this.parseDate()}
+          </div>
+        </div>
       </div>
     )
   }
