@@ -20,9 +20,6 @@ class ProfileBeatsIndex extends React.Component {
             return <ProfileBeatsIndexItem deleteBeat={this.props.deleteBeat} key={idx} beat={beat} />
           })}
         </div>
-        <div>
-          <button onClick={this.play}>Play</button>
-        </div>
       </div>
     )
   }
