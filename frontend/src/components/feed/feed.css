@@ -1,20 +1,57 @@
 .feed-beats-container {
     display: block;
     margin-left: 5rem;
+    border-style: solid;
+    border-radius: 1rem;
+    border-width: thin;
+    height: 26rem;
+    width: 88%;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-color: red;
+    background-color:rgba(3, 2, 2, 0.438)
+ 
 }
+
+.feed-beats-container::-webkit-scrollbar {
+    display: none;
+}
+
+
 
 .feed-title {
     display: flex;
     justify-content: center;
     padding: 5rem 0 0 0;
     font-size: 3rem;
+
+}
+
+.feed-beat-title{
+    color: white;
+    font-family: Courier New 
 }
 
 
 .feed-beat {
+    width: 20rem;
+    height: 10rem;
     font-family: Arial, Helvetica, sans-serif;
     color: pink;
     margin: 20px;
-    border-radius: 3px;
-    border-color: black;
+    border-radius: 1rem;
+    border-color: rgb(195, 74, 74);
+
+    
+}
+
+.feed-beat-content{
+   margin-left: 1rem;
+   margin-top: 2rem;
+ 
+}
+
+.feed-beat-date{
+    margin-left: 8rem;
+    font-size: 0.9rem;
 }
