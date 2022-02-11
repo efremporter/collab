@@ -1,10 +1,10 @@
 .feed-beats-container {
     display: block;
-    margin-left: 5rem;
+    margin: 2rem 0 0 5rem;
     border-style: solid;
     border-radius: 1rem;
     border-width: thin;
-    height: 26rem;
+    height: 50rem;
     width: 88%;
     overflow: scroll;
     overflow-x: hidden;
