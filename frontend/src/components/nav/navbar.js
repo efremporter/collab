@@ -28,9 +28,36 @@ class NavBar extends React.Component {
         );
       } else {
         return (
-            <div>
-            
-           
+          <div>
+            <span className="github-logo">
+              <a href={"https://github.com/zackalsiday"}><img id="github-logo-1" src={require('../../images/github-icon-png-29.jpg.png')} /></a>
+              <br/>
+              <a href={"https://github.com/efremporter"}><img id="github-logo-2" src={require('../../images/github-icon-png-29.jpg.png')} /></a>
+              <br/>
+              <a href={"https://github.com/efremporter"} <img id="github-logo-3" src={require('../../images/github-icon-png-29.jpg.png')} /> 
+            </span>
+            <span className="linkedin-logo">
+              <img id="linkedin-logo-1" src={require('../../images/375-3755097_join-the-conversation-linkedin-logo-white-png-transparent.png')} />
+              <br />
+              <img id="linkedin-logo-2" src={require('../../images/375-3755097_join-the-conversation-linkedin-logo-white-png-transparent.png')} />
+              <br />
+              <img id="linkedin-logo-3" src={require('../../images/375-3755097_join-the-conversation-linkedin-logo-white-png-transparent.png')} />
+            </span>
+            <span className="email-logo">
+              <img id="email-logo-1" src={require('../../images/Daco_3269642.png')} />
+              <br />
+              <img id="email-logo-2" src={require('../../images/Daco_3269642.png')} />
+              <br />
+              <img id="email-logo-3" src={require('../../images/Daco_3269642.png')} />
+            </span>
+            <span className="names">
+              <p id="Zack-Alsiday">Zack Alsiday</p>
+              {/* <br /> */}
+              <p id="Efrem-Porter"> Efrem Porter</p>
+              {/* <br /> */}
+              <p id="Daniel-Bai"> Daniel Bai</p>
+            </span>
+         
               <div className='login-signup-but-container'>
                 <div className='login-but-container' >
                 <Link className='login-but' to={'/login'} style={{ textDecoration: 'none' }}><button className="login-but-text" >LOGIN</button></Link>
@@ -38,13 +65,14 @@ class NavBar extends React.Component {
                 <div className='signup-but-container'>
                 <Link className='signup-but' to={'/signup'} style={{ textDecoration: 'none' }}><button className="signup-but-text" >SIGNUP</button></Link>
                 </div>
+           
               </div>
-            <div className="github-logo">
-                <img  id="github-logo-1" src={require('../../images/github-icon-png-29.jpg.png')} />
-                <img id="github-logo-2" src={require('../../images/github-icon-png-29.jpg.png')} />
-                <img id="github-logo-3" src={require('../../images/github-icon-png-29.jpg.png')} />
-            </div>
-            </div>
+           
+          
+            
+         
+          
+          </div>
         );
       }
   }
