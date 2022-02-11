@@ -4,6 +4,7 @@ const express = require("express");
 const app = express();
 const users = require("./routes/api/users");
 const beats = require("./routes/api/beats");
+const comments = require('./routes/api/comments')
 const bodyParser = require('body-parser');
 const User = require('./models/User')
 const passport = require('passport');
@@ -31,3 +32,4 @@ app.listen(port, () => console.log(`Server is running on port ${port}`));
 
 app.use("/api/users", users);
 app.use("/api/beats", beats);
+app.use("/api/comments", comments)

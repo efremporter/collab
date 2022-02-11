@@ -1,5 +1,6 @@
 import React from 'react'
 import * as profilecss from './profile.css'
+import CommentsIndexContainer from '../comments/comments_index_container'
 
 class ProfileBeatsIndexItem extends React.Component {
   constructor(props) {
@@ -53,6 +54,7 @@ class ProfileBeatsIndexItem extends React.Component {
         <audio controls>
           <source src={`/api/beats/stream/${this.props.beat.file}`}/>
         </audio>
+        <CommentsIndexContainer id={this.props.id} beat={this.props.beat}/>
         {button}
       </div>
     )
