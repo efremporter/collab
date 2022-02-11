@@ -1,4 +1,5 @@
 import React from 'react';
+import * as profilecss from './profile.css'
 
 class PostBeatForm extends React.Component {
   constructor(props) {
@@ -40,16 +41,17 @@ class PostBeatForm extends React.Component {
 
   render() {
     return (
-      <form action="">
-        <input type="file" onChange={this.handleChange('file')}></input>
-        <br></br><br></br>
-        <input type="text" placeholder="Title your beat" value={this.state.title} onChange={this.handleChange('title')}></input>
-        <button onClick={this.handleSubmit.bind(this)}>Submit</button>
-        <ul>
-          {this.props.errors.map(error => {
-            return <li>{error}</li>
-          })}
-        </ul>
+      <form className="profile-beat-form" action="">
+          <div className='profile-post-beat-container'>
+            <input className='profile-post-beat-choose' type="file" onChange={this.handleChange('file')}></input>
+            <input className='profile-post-beat-title' type="text" placeholder="Title your beat" value={this.state.title} onChange={this.handleChange('title')}></input>
+            <button className='profile-post-beat-submit-but' onClick={this.handleSubmit.bind(this)}>Submit</button>
+            <div className='profile-post-beat-errors-container'>
+              {this.props.errors.map(error => {
+                return <div className='profile-post-beat-error'>{error}</div>
+              })}
+            </div>
+        </div>
       </form>
     )
   }
