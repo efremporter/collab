@@ -238,3 +238,33 @@
     background-color: red 
 }
 
+.email-address{
+  position: relative;
+  left: 86%;
+  bottom: 33rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+#Zack-Alsiday-ad{
+    display: flex;
+    
+}
+
+
+#Efrem-Porter-ad{
+  display: flex;
+ 
+   position: relative;
+   top: 1rem; 
+ 
+   
+  
+
+}
+
+
+#Daniel-Bai-ad{
+ 
+    position: relative;
+    
+    top: 2rem; 
+}
