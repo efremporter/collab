@@ -8,7 +8,6 @@
     padding: 0 0 0 0;
     background-color: rgba(3, 2, 2, 0.438);
     width: 60%;
-    
 }
 
 .profile-title {
@@ -31,7 +30,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 2rem 0 2rem 6.5rem;
     width: 40%;
-
+   
 }
 
 .profile-post-beat-upload {
@@ -75,7 +74,7 @@
     border-style: solid;
     border-radius: 1rem;
     border-width: thin;
-    height: 40rem;
+    height: 26rem;
     width: 88%;
     overflow: scroll;
     overflow-x: hidden;
