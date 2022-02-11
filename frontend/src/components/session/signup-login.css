@@ -1,11 +1,12 @@
-form{
+.signup-form{
     /* border: 1px solid red;
     box-sizing: border-box; */
     padding: 16px;
 
     margin-top: 1rem;
     width: 30%;
-
+    position: relative;
+    bottom: 33rem;
     margin-left: 1rem
 }
 
@@ -23,15 +24,15 @@ input[type=text], input[type=password]{
   color: white;
   position: absolute;
 
-  left: 17.5%;
-  font-size: 1.5rem;
+  left: 55%;
+  font-size: 1.2rem;
 }
 
 .form-title-signup{
     color: white;
   position: absolute;
-  left: 10%;
-  font-size: 1.5rem;
+  left: 26%;
+  font-size: 1.2rem;
 }
 
 
