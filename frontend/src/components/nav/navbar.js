@@ -29,6 +29,7 @@ class NavBar extends React.Component {
       } else {
         return (
           <div>
+            <div className="creators-info">
             <span className="github-logo">
               <a href={"https://github.com/zackalsiday"}><img id="github-logo-1" src={require('../../images/github-icon-png-29.jpg.png')} /></a>
               <br/>
@@ -44,7 +45,7 @@ class NavBar extends React.Component {
               <a href={"https://www.linkedin.com/in/daniel-bai-227826b2/"}><img id="linkedin-logo-3" src={require('../../images/375-3755097_join-the-conversation-linkedin-logo-white-png-transparent.png')} /></a>
             </span>
             <span className="email-logo">
-              <img id="email-logo-1" src={require('../../images/Daco_3269642.png')} />
+             <img id="email-logo-1" src={require('../../images/Daco_3269642.png')} /> 
               <br />
               <img id="email-logo-2" src={require('../../images/Daco_3269642.png')} />
               <br />
@@ -57,6 +58,14 @@ class NavBar extends React.Component {
               {/* <br /> */}
               <p id="Daniel-Bai"> Daniel Bai</p>
             </span>
+            <span className="email-address">
+              <p id="Zack-Alsiday-ad">alsidayzack@gmail.com</p>
+              {/* <br /> */}
+              <p id="Efrem-Porter-ad">eopiscool@gmail.com</p>
+              {/* <br /> */}
+              <p id="Daniel-Bai-ad"> danielbai@gmail.com</p>
+            </span>
+            </div>
          
               <div className='login-signup-but-container'>
                 <div className='login-but-container' >
