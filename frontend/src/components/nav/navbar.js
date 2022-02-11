@@ -28,7 +28,7 @@ class NavBar extends React.Component {
         );
       } else {
         return (
-          <div>
+          <div className="general-form">
             <div className="creators-info">
             <span className="github-logo">
                 <a href={"https://github.com/zackalsiday"} target="_blank"><img id="github-logo-1" src={require('../../images/github-icon-png-29.jpg.png')} /></a>

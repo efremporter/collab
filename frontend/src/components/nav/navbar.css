@@ -141,7 +141,12 @@
     bottom: 4rem;
     /* justify-content: center; */
 }
-
+.login-signup-but-container,
+.form-title-login,
+.form-title-signup,
+.signup-form{
+    margin-top: 13rem
+}
 .login-but-container, 
 .signup-but-container{
     margin: 20px 20px 20px 20px;
@@ -275,11 +280,8 @@
     
     top: 2rem; 
 }
+.creators-info{
+   position: relative;
+   bottom: 2.9rem;
 
-/* .creators-info{
-    width: 29rem;
-    height: 10rem;
-    border-style: dotted;
-    margin-left: 60rem
-
-} */
+} 

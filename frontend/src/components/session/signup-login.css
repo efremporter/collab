@@ -26,7 +26,7 @@ input[type=text], input[type=password]{
 
   left: 55%;
   font-size: 1.2rem;
-  top: -2rem
+  bottom: 20.45rem
 }
 
 .form-title-signup{
@@ -34,7 +34,7 @@ input[type=text], input[type=password]{
   position: absolute;
   left: 26%;
   font-size: 1.2rem;
-  top: -2rem
+    bottom: 33.45rem
 }
 
 
