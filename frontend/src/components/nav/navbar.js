@@ -37,14 +37,14 @@ class NavBar extends React.Component {
               <a href={"https://github.com/hellodanielbai"}> <img id="github-logo-3" src={require('../../images/github-icon-png-29.jpg.png')} /> </a>
             </span>
             <span className="linkedin-logo">
-              <img id="linkedin-logo-1" src={require('../../images/375-3755097_join-the-conversation-linkedin-logo-white-png-transparent.png')} />
+              <a href={"https://www.linkedin.com/in/zack-alsiday-061598210/"}><img id="linkedin-logo-1" src={require('../../images/375-3755097_join-the-conversation-linkedin-logo-white-png-transparent.png')} /></a>
               <br />
-              <img id="linkedin-logo-2" src={require('../../images/375-3755097_join-the-conversation-linkedin-logo-white-png-transparent.png')} />
+              <a href={"https://www.linkedin.com/in/efrem-porter-550b0b224/"}><img id="linkedin-logo-2" src={require('../../images/375-3755097_join-the-conversation-linkedin-logo-white-png-transparent.png')} /></a>
               <br />
-              <img id="linkedin-logo-3" src={require('../../images/375-3755097_join-the-conversation-linkedin-logo-white-png-transparent.png')} />
+              <a href={"https://www.linkedin.com/in/daniel-bai-227826b2/"}><img id="linkedin-logo-3" src={require('../../images/375-3755097_join-the-conversation-linkedin-logo-white-png-transparent.png')} /></a>
             </span>
             <span className="email-logo">
-              <img id="email-logo-1" src={require('../../images/Daco_3269642.png')} />
+             <img id="email-logo-1" src={require('../../images/Daco_3269642.png')} /> 
               <br />
               <img id="email-logo-2" src={require('../../images/Daco_3269642.png')} />
               <br />
@@ -56,6 +56,13 @@ class NavBar extends React.Component {
               <p id="Efrem-Porter"> Efrem Porter</p>
               {/* <br /> */}
               <p id="Daniel-Bai"> Daniel Bai</p>
+            </span>
+            <span className="email-address">
+              <p id="Zack-Alsiday-ad">alsidayzack@gmail.com</p>
+              {/* <br /> */}
+              <p id="Efrem-Porter-ad">eopiscool@gmail.com</p>
+              {/* <br /> */}
+              <p id="Daniel-Bai-ad"> danielbai@gmail.com</p>
             </span>
          
               <div className='login-signup-but-container'>
