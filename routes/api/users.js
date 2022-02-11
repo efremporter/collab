@@ -94,4 +94,18 @@ router.post('/login', (req, res) => {
     })
 })
 
+router.get('/:id', (req, res) => {
+  User.findById(req.params.id)
+    .then(user => {
+      let userInfo = {}
+      userInfo.handle = user.handle;
+      userInfo._id = user._id;
+      userInfo.date = user.date
+      res.json(userInfo)
+    })
+    .catch(err => {
+      res.status(404).json({nouserfound: 'No user found'})
+    })
+})
+
 module.exports = router;
