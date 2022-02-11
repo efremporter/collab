@@ -32,9 +32,9 @@ class NavBar extends React.Component {
             <span className="github-logo">
               <a href={"https://github.com/zackalsiday"}><img id="github-logo-1" src={require('../../images/github-icon-png-29.jpg.png')} /></a>
               <br/>
-              <img id="github-logo-2" src={require('../../images/github-icon-png-29.jpg.png')} />
+              <a href={"https://github.com/efremporter"}><img id="github-logo-2" src={require('../../images/github-icon-png-29.jpg.png')} /></a>
               <br/>
-              <img id="github-logo-3" src={require('../../images/github-icon-png-29.jpg.png')} /> 
+              <a href={"https://github.com/efremporter"} <img id="github-logo-3" src={require('../../images/github-icon-png-29.jpg.png')} /> 
             </span>
             <span className="linkedin-logo">
               <img id="linkedin-logo-1" src={require('../../images/375-3755097_join-the-conversation-linkedin-logo-white-png-transparent.png')} />
