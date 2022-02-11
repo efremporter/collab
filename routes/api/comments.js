@@ -47,7 +47,6 @@ router.get('/stream/:id', (req, res) => {
 const app = express();
 
 router.post('/', passport.authenticate('jwt', { session: false }), upload.single('file'), (req, res) => {
-  console.log("post")
       const input = {file: req.file, title: req.body.title, user: req.user, beat: req.body.beat};
       const { errors, isValid } = validateCommentInput(input);
   
