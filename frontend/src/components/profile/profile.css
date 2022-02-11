@@ -11,13 +11,37 @@
     font-size: 3rem;
 }
 
-
 /* PROFILE POST */
-.profile-post-beat-container {
-    padding: 0 0 2rem 5rem;
-
+.profile-post-beat-title {
+    font-size: 2rem;
+    padding: 4rem 0 0 5rem;
 }
 
+.profile-post-beat-container {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 2rem 0 2rem 6.5rem;
+    width: 40%;
+}
+
+.profile-post-beat-upload {
+    padding-bottom: 0.2rem;
+    font-size: 1.2rem;
+    height: 3.5rem;
+    color: red;
+}
+
+.profile-post-beat-input {
+    background-color: blue;
+}
+
+.profile-post-beat-submit-but {
+    width: 40%;
+    height: 3.5rem;
+    background-color: #aaa0a0;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin-bottom: 4rem;
+}
 
 
 /* PROFILE INDEX */
@@ -35,7 +59,7 @@
 
 .profile-index-beat {
     font-size: 1rem;
-    padding: 0 0 1rem 0;
+    padding: 0 0 2rem 0;
 }
 
 .profile-index-beat-title {
