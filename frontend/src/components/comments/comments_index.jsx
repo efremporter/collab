@@ -12,19 +12,10 @@ class CommentsIndex extends React.Component {
   }
 
   render() {
-    // let comments;
-    // if (this.props.comments) {
-    //   comments = this.props.comments.map((comment, idx) => {
-    //     return <li><CommentsIndexItem beat={this.props.beat} key={idx} comment={comment}/></li>
-    //   })
-    // } else {
-    //   comments = null;
-    // }
-
     let comments;
-    comments = this.props.comments.map((comment, idx) => {
+    comments = this.props.comments.map((comment, key) => {
       if (comment.beat === this.props.beat._id) {
-        return <li><CommentsIndexItem beat={this.props.beat} key={idx} comment={comment}/></li>
+        return <li><CommentsIndexItem beat={this.props.beat} key={key} comment={comment}/></li>
       } else {
         return null;
       }

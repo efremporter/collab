@@ -18,7 +18,7 @@ class Feed extends React.Component {
         <div className="feed-title">BEATS FEED</div>
         <div className="feed-beats-container">
           {this.props.beats.map( (beat, idx) => {
-            return <FeedIndexItem fetchUser={this.props.fetchUser} users={this.props.users} key={idx} beat={beat} />
+            return <FeedIndexItem id={this.props.id} fetchUser={this.props.fetchUser} users={this.props.users} key={idx} beat={beat} />
           })}
         </div>
 

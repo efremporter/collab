@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CommentsIndexContainer from '../comments/comments_index_container';
 
 class FeedIndexItem extends React.Component {
   constructor(props) {
     super(props)
+    this.state = {comments: null, button: <button onClick={this.getComments.bind(this)}>Comments</button>}
+    this.getHandle = this.getHandle.bind(this)
   }
 
   componentDidMount() {
@@ -33,11 +36,28 @@ class FeedIndexItem extends React.Component {
     return `${month}/${day}/${year[0].slice(2)} ${hour}:${minute} ${AMPM}`
   }
 
+  getComments() {
+    this.setState({
+      comments: <CommentsIndexContainer id={this.props.id} beat={this.props.beat}/>,
+      button: <button onClick={this.closeComments.bind(this)}>Close</button>
+    })
+  }
+
+  closeComments() {
+    this.setState({comments: null, button: <button onClick={this.getComments.bind(this)}>Comments</button>})
+  }
+
+  getHandle() {
+    if (!this.props.users || !this.props.users[this.props.beat.user]) return null;
+    return this.props.users[this.props.beat.user].handle
+  }
+
   render() {
     return (
       <div className="feed-beat">
         <div className="feed-beat-content">
-          <Link to={`/profile/${this.props.beat.user}`}style={{ textDecoration: 'none' }}><h1 className="feed-beat-title">{this.props.beat.title}</h1></Link>
+          <div style={{ textDecoration: 'none' }}><h1 className="feed-beat-title">{this.props.beat.title}</h1></div>
+          <Link to={`/profile/${this.props.beat.user}`}style={{ textDecoration: 'none' }}><h1 className="feed-beat-title">{this.getHandle()}</h1></Link>
         <audio controls>
           <source  src={`/api/beats/stream/${this.props.beat.file}`}/>
         </audio>
@@ -45,6 +65,8 @@ class FeedIndexItem extends React.Component {
             {this.parseDate()}
           </div>
         </div>
+        <div>{this.state.button}</div>
+        <div>{this.state.comments}</div>
       </div>
     )
   }
