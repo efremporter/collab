@@ -6,7 +6,8 @@ import Feed from './feed';
 const mSTP = state => {
   return {
     beats: Object.values(state.beats),
-    users: state.users
+    users: state.users,
+    id: state.session.user.id
   }
 }
 

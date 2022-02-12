@@ -24,8 +24,9 @@ class PostCommentForm extends React.Component {
   render() {
     return (
       <form>
+        <div>Post a comment!</div>
         <input type="file" onChange={this.handleChange('file')}/>
-        <input type="text" value={this.state.title} onChange={this.handleChange('title')}/>
+        <input type="text" value={this.state.title} placeholder="Title Your Comment" onChange={this.handleChange('title')}/>
         <button onClick={this.handleSubmit.bind(this)}>Submit</button>
       </form>
     )

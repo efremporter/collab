@@ -5,6 +5,7 @@ import CommentsIndexContainer from '../comments/comments_index_container'
 class ProfileBeatsIndexItem extends React.Component {
   constructor(props) {
     super(props)
+    this.state = {comments: null, button: <button onClick={this.getComments.bind(this)}>Comments</button>}
   }
 
   parseDate() {
@@ -34,7 +35,16 @@ class ProfileBeatsIndexItem extends React.Component {
     this.props.deleteBeat(this.props.beat._id)
   }
 
+  getComments() {
+    this.setState({
+      comments: <CommentsIndexContainer id={this.props.id} beat={this.props.beat}/>, 
+      button: <button onClick={this.closeComments.bind(this)}>Close</button>
+    })
+  }
 
+  closeComments() {
+    this.setState({comments: null, button: <button onClick={this.getComments.bind(this)}>Comments</button>})
+  }
   
   render() {
     let button = null
@@ -45,6 +55,7 @@ class ProfileBeatsIndexItem extends React.Component {
       <div className="profile-index-beat">
         <div className="profile-index-beat-title">
           {this.props.beat.title}
+          <button onClick={this.delete.bind(this)}>Delete</button>
         </div> 
         <div className="profile-index-beat-date">
           {this.parseDate()}
@@ -52,8 +63,9 @@ class ProfileBeatsIndexItem extends React.Component {
         <audio controls>
           <source src={`/api/beats/stream/${this.props.beat.file}`}/>
         </audio>
-        <CommentsIndexContainer id={this.props.id} beat={this.props.beat}/>
-        {button}
+        <br></br>
+        <div>{this.state.button}</div>
+        <div>{this.state.comments}</div>
       </div>
     )
   }
