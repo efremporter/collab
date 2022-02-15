@@ -10,12 +10,13 @@
     overflow-x: hidden;
     border-color: red;
     background-color:rgba(3, 2, 2, 0.438)
- 
+
 }
 
 .feed-beats-container::-webkit-scrollbar {
     display: none;
 }
+
 
 
 
@@ -41,17 +42,21 @@
     margin: 20px;
     border-radius: 1rem;
     border-color: rgb(195, 74, 74);
-
-    
 }
 
-.feed-beat-content{
-   margin-left: 1rem;
-   margin-top: 2rem;
- 
+.feed-beat-content {
+    margin: 2rem 0 5rem 1rem;
 }
 
 .feed-beat-date{
     margin-left: 8rem;
     font-size: 0.9rem;
+}
+
+.feed-beat-button {
+    margin-left: 30rem;
+}
+
+.feed-beat-comments {
+    margin-left: 30rem;
 }
