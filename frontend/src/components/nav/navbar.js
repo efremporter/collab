@@ -31,11 +31,17 @@ class NavBar extends React.Component {
           <div className="general-form">
             <div className="creators-info">
             <span className="github-logo">
-                <a href={"https://github.com/zackalsiday"} target="_blank"><img id="github-logo-1" src={require('../../images/github-icon-png-29.jpg.png')} /></a>
+                <span className="github-logo-pic">
+                  <a href="https://github.com/zackalsiday" target="_blank"><img id="github-logo-1" src={require('../../images/github-icon-png-29.jpg.png')} /></a>
+                </span> 
               <br/>
-                <a href={"https://github.com/efremporter"} target="_blank"><img id="github-logo-2" src={require('../../images/github-icon-png-29.jpg.png')} /></a>
+                <span className="github-logo-pic">
+                  <a href="https://github.com/efremporter" target="_blank"><img id="github-logo-2" src={require('../../images/github-icon-png-29.jpg.png')} /></a>
+                  </span> 
               <br/>
-                <a href={"https://github.com/hellodanielbai"} target="_blank"> <img id="github-logo-3" src={require('../../images/github-icon-png-29.jpg.png')} /> </a>
+                <span className="github-logo-pic" >
+                  <a href={"https://github.com/hellodanielbai"} target="_blank"> <img id="github-logo-3" src={require('../../images/github-icon-png-29.jpg.png')} /> </a>
+                  </span>
             </span>
             <span className="linkedin-logo">
                 <a href={"https://www.linkedin.com/in/zack-alsiday-061598210/"} target="_blank"><img id="linkedin-logo-1" src={require('../../images/375-3755097_join-the-conversation-linkedin-logo-white-png-transparent.png')} /></a>
