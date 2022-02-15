@@ -11,17 +11,14 @@
 .github-logo{
   position: relative;
   width: fit-content;
-  left: 75%;
-  top: 12rem;
+  left: 73.2%;
+  top: 7.52rem;
 }
 #github-logo-1{
     display: flex;
    width: 2rem;
 
-    /* border-radius: 1.5rem; */
-    position: relative;
-    /* left: 0.2rem;
-    top: 2rem; */
+
     cursor: pointer;
 
 
@@ -29,9 +26,7 @@
 
 .github-logo-1{
     background-color: rgba(255, 0, 0, 0.924);
-    position: relative;
-    bottom: 2rem;
-    right: 0.2rem;
+
     width:2.8rem ;
     height: 2.8rem;
     cursor: pointer;
@@ -45,9 +40,7 @@
 #github-logo-2{
   display: flex;
    width: 2rem;
-   position: relative;
-    /* left: 0.4rem;
-    top: 0.3rem; */
+
     cursor: pointer;
      
  
@@ -57,49 +50,41 @@
 }
 .github-logo-2{
     background-color: rgb(255, 0, 0);
-    position: relative;
-    bottom: 2rem;
+  
     width: 2.8rem;
     height: 2.8rem;
 }
 
 #github-logo-3{
     width: 2rem;
-position: relative;
-/* top: 0.3rem;
-left: 0.4rem */
+
      
 }
 
 .github-logo-3{
     background-color: rgba(255, 0, 0, 0);
-    position: relative;
-    bottom: 1.9rem;
+  
     width: 2.8rem;
     height: 2.8rem;
 }
 
 .linkedin-logo{
   position: relative;
-  left: 76.5%;
-  top: 2.8rem
+  left: 76.2%;
+  bottom: 1rem;
 
 }
 #linkedin-logo-1{
     display: flex;
    width: 2rem;
-   position: relative;
-    bottom: 0.2rem;
-     padding: 12px 16px;
+
    
 }
 
 #linkedin-logo-2{
   display: flex;
    width: 2rem;
-   position: relative;
-   bottom: 1.6rem; 
-     padding: 12px 16px;
+  
  
    
   
@@ -109,22 +94,19 @@ left: 0.4rem */
 
 #linkedin-logo-3{
     width: 2rem;
-    position: relative;
-    bottom: 3.1rem;
-      padding: 12px 16px;
+
 }
 
 .email-logo{
   position: relative;
-  left: 80.3%;
-  top: 0.5rem;
+  left: 79%;
+    bottom: 9.7rem;
 
 }
 #email-logo-1{
     display: flex;
    width: 2rem;
-   position: relative;
-   bottom: 10.22rem;
+ 
      
    
 }
@@ -132,8 +114,7 @@ left: 0.4rem */
 #email-logo-2{
   display: flex;
    width: 2rem;
-   position: relative;
-   bottom: 10.22rem; 
+   
        
  
    
@@ -144,41 +125,31 @@ left: 0.4rem */
 
 #email-logo-3{
     width: 2rem;
-    position: relative;
-    bottom: 10.22rem;
+ 
         
 }
 
 .names{
   position: relative;
-  left: 68.5%;
-  bottom: -.5rem;
+  left: 65.5%;
+bottom: 18rem;
   width: fit-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 #Zack-Alsiday{
     
-  
-   position: relative;
-   bottom: 19.5rem;
-   font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-
-#Efrem-Porter{
-  /* display: flex;
-   width: 2rem; */
-   position: relative;
-   bottom: 18.5rem; 
-  font-family: Verdana, Geneva, Tahoma, sans-serif
+  position: relative;
+  bottom: 1rem;
    
-  
-
+   
 }
+
+
 
 
 #Daniel-Bai{
-    /* width: 2rem; */
-    position: relative;
-    bottom: 17.22rem;
+   position: relative;
+   top: 1rem;
      font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 .header {
@@ -304,38 +275,32 @@ left: 0.4rem */
 .email-address{
   position: relative;
   left: 83%;
-  bottom: 26.9rem;
+  bottom: 25.9rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.1rem;
   width: fit-content;
 }
 #Zack-Alsiday-ad{
-    display: flex;
-    
-}
-
-
-#Efrem-Porter-ad{
-  display: flex;
- 
-   position: relative;
-   top: 1rem; 
- 
    
-  
-
+    position: relative;
+    bottom: 1rem
 }
+
+
+
 
 
 #Daniel-Bai-ad{
  
     position: relative;
-    
-    top: 2rem; 
+    top: 1rem;
+
 }
 .creators-info{
    position: relative;
    bottom: 8.9rem;
+   right: 4rem;
     display: flex;
     flex-direction: column;
+    
 } 
