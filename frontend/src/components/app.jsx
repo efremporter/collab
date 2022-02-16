@@ -7,12 +7,11 @@ import LoginFormContainer from './session/login_form_container';
 import SignupFormContainer from './session/signup_form_container.js';
 import FeedContainer from './feed/feed_container';
 import ProfileContainer from './profile/profile_container';
-import Footer from './footer/footer';
+import FooterContainer from './footer/footer_container';
 
 const App = () => (
   <div>
     <NavBarContainer />
-    <Footer />
     <Switch>
         <AuthRoute exact path="/" component={MainPage} />
         <AuthRoute exact path="/login" component={LoginFormContainer} />
@@ -21,6 +20,7 @@ const App = () => (
         <ProtectedRoute exact path ="/feed" component={FeedContainer} />
         <ProtectedRoute exact path ="/profile/:id" component={ProfileContainer} />
     </Switch>
+    <FooterContainer />
   </div>
 );
 
