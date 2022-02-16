@@ -138,19 +138,16 @@ bottom: 18rem;
 }
 #Zack-Alsiday{
     
-  position: relative;
-  bottom: 1rem;
-   
-   
+    position: relative;
+    bottom: 1rem;
+
+
 }
 
-
-
-
 #Daniel-Bai{
-   position: relative;
-   top: 1rem;
-     font-family: Verdana, Geneva, Tahoma, sans-serif
+    position: relative;
+    top: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 .header {
     margin-top: 2rem;
@@ -174,7 +171,7 @@ bottom: 18rem;
     margin: 20px 20px 20px 20px;
     position: relative;
     bottom: 45rem;
-    left: 9rem
+    left: 9rem;
 }
 
 .login-but-container button, 
@@ -188,7 +185,6 @@ bottom: 18rem;
 
 .login-but-container button:hover, 
 .signup-but-container button:hover {
-    background-color: red;
     cursor: pointer;
 }
 
