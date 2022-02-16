@@ -21,7 +21,6 @@ class Feed extends React.Component {
             return <FeedIndexItem id={this.props.id} fetchUser={this.props.fetchUser} users={this.props.users} key={idx} beat={beat} />
           })}
         </div>
-
       </div>
     )
   }

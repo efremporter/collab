@@ -54,8 +54,8 @@ class ProfileBeatsIndexItem extends React.Component {
     return (
       <div className="profile-index-beat">
         <div className="profile-index-beat-title">
-          {this.props.beat.title}
-          <button onClick={this.delete.bind(this)}>Delete</button>
+          {this.props.beat.title} 
+          {button}
         </div> 
         <div className="profile-index-beat-date">
           {this.parseDate()}
