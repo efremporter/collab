@@ -158,26 +158,13 @@ bottom: 18rem;
 
 .login-signup-but-container {
     display:flex;
+    justify-content: center;
     position: relative;
-    bottom: 9rem;
-    position: absolute;
-    bottom: 9 rem;
-  
-    /* justify-content: center; */
+    bottom: 41rem
+
 }
-.login-signup-but-container,
-.form-title-login,
-.form-title-signup,
-.signup-form{
-    margin-top: 13rem
-}
-.login-but-container, 
-.signup-but-container{
-    margin: 20px 20px 20px 20px;
-    position: relative;
-    bottom: 45rem;
-    left: 9rem
-}
+
+
 
 .login-but-container button, 
 .signup-but-container button {
