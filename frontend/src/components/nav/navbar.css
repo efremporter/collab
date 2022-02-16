@@ -188,6 +188,7 @@ bottom: 18rem;
 .login-but-container button:hover, 
 .signup-but-container button:hover {
     cursor: pointer;
+    background-color: red;
 }
 
 .login-but-text, 
