@@ -34,14 +34,14 @@ router.get('/stream/:id', (req, res) => {
       // res.json(beat)
 });
 
-// router.delete('/:id', (req, res) => {
-//   Beat.findById(req.params.id)
-//     .then(beat => beat.remove())
-//     .then(res.json('Success'))
-//     .catch(err =>
-//         res.status(404).json({ nobeatsfound: 'No beat found with that ID' })
-//     );
-// });
+router.delete('/:id', (req, res) => {
+  Comment.findById(req.params.id)
+    .then(comment => comment.remove())
+    .then(res.json('Success'))
+    .catch(err =>
+        res.status(404).json({ nocommentsfound: 'No comment found with that ID' })
+    );
+});
 
 
 const app = express();

@@ -4,10 +4,6 @@ export const fetchComments = beatId => {
   return axios.get(`/api/comments/${beatId}`);
 };
 
-// export const fetchComment = commentId => {
-//   return axios.get(`/api/comments/${commentId}`)
-// }
-
 export const createComment = comment => {
   let formData = new FormData();
   for (let key in comment) {
@@ -18,6 +14,6 @@ export const createComment = comment => {
   // ({method: 'POST', url: '/api/comments', data: formData, headers: { "Content-Type": "multipart/form-data" }})
 }
 
-export const deleteBeat = beatId => {
-  return axios.delete(`/api/comments/${beatId}`)
+export const deleteComment = commentId => {
+  return axios.delete(`/api/comments/${commentId}`)
 }
