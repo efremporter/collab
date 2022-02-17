@@ -1,0 +1,12 @@
+.profile-comment-link {
+  font-size: 20px;
+  text-decoration: none;
+  display: inline;
+  font-weight: normal;
+  cursor: pointer;
+  color: #EA3323
+}
+
+.profile-comment-link:hover {
+  color: #FFFFFF;
+}

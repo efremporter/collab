@@ -38,7 +38,13 @@
 
 .feed-beat-title{
     color: white;
-    font-family: Courier New 
+    font-family: Courier;
+}
+
+.feed-beat-author {
+    color: #EA3323;
+    cursor: pointer;
+    font-size: 2rem;
 }
 
 

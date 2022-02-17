@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CommentsIndexContainer from '../comments/comments_index_container';
 
-class FeedIndexItem extends React.Component {
+class FeedIndexItem extends React.Component {       
   constructor(props) {
     super(props)
     this.state = {comments: null, button: <button onClick={this.getComments.bind(this)}>Comments</button>}
@@ -57,7 +57,7 @@ class FeedIndexItem extends React.Component {
       <div className="feed-beat">
         <div className="feed-beat-content">
           <div style={{ textDecoration: 'none' }}><h1 className="feed-beat-title">{this.props.beat.title}</h1></div>
-          <Link to={`/profile/${this.props.beat.user}`}style={{ textDecoration: 'none' }}><h1 className="feed-beat-title">{this.getHandle()}</h1></Link>
+          <Link to={`/profile/${this.props.beat.user}`}style={{ textDecoration: 'none' }}><h1 className="feed-beat-author">{this.getHandle()}</h1></Link>
           <div className="feed-beat-date">
             {this.parseDate()}
           </div>

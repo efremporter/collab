@@ -6,7 +6,6 @@ export const RECEIVE_BEAT_ERRORS = 'RECEIVE_BEAT_ERRORS';
 export const REMOVE_BEAT_ERRORS = 'REMOVE_BEAT_ERRORS'
 
 const receiveBeats = beats => {
-  console.log(beats.data)
   return {
     type: RECEIVE_BEATS,
     beats: beats.data

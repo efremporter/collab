@@ -1,8 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import * as commentcss from './comment.css'
 
 class CommentsIndexItem extends React.Component {
   constructor(props) {
     super(props)
+  }
+
+  componentDidMount() {
+    console.log("here")
+    this.props.fetchAuthor(this.props.comment.author)
+    this.getHandle = this.getHandle.bind(this)
   }
 
   parseDate() {
@@ -32,8 +40,12 @@ class CommentsIndexItem extends React.Component {
     this.props.deleteComment(this.props.comment._id)
   }
 
+  getHandle() {
+    if (!this.props.users || !this.props.users[this.props.comment.author]) return null;
+    return this.props.users[this.props.comment.author].handle
+  }
+
   render() {
-    console.log(this.props)
     let button = null
     if (this.props.currentUserId === this.props.comment.author || this.props.beat.user === this.props.currentUserId) {
       button = <button className="profile-delete-but" onClick={this.delete.bind(this)}>Delete</button>
@@ -42,7 +54,7 @@ class CommentsIndexItem extends React.Component {
       return (
         <div className="profile-index-beat">
           <div className="profile-index-beat-title">
-            {this.props.comment.title}
+          <Link to={`/profile/${this.props.comment.author}`}style={{ textDecoration: 'none' }}><h1 className="profile-comment-link">{this.getHandle()}</h1></Link>: {this.props.comment.title}
             {button}
           </div> 
           <div className="profile-index-beat-date">
