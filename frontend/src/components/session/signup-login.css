@@ -9,6 +9,10 @@
   margin-left: 8rem;
 }
 
+.guest-user-but{
+  font-size: 0.8rem;
+}
+
 .llogin-signup-but-container{
   display: flex;
   justify-content: center;
