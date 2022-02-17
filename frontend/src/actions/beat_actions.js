@@ -2,8 +2,8 @@ import * as APIUtil from '../util/beats_util'
 export const RECEIVE_BEATS = 'RECEIVE_BEATS';
 export const RECEIVE_BEAT = 'RECEIVE_BEAT';
 export const REMOVE_BEAT = 'REMOVE_BEAT';
-export const RECEIVE_ERRORS = 'RECEIVE_ERRORS';
-export const REMOVE_ERRORS = 'REMOVE_ERRORS'
+export const RECEIVE_BEAT_ERRORS = 'RECEIVE_BEAT_ERRORS';
+export const REMOVE_BEAT_ERRORS = 'REMOVE_BEAT_ERRORS'
 
 const receiveBeats = beats => {
   console.log(beats.data)
@@ -29,14 +29,14 @@ const removeBeat = beatId => {
 
 const receiveErrors = errors => {
   return {
-    type: RECEIVE_ERRORS,
+    type: RECEIVE_BEAT_ERRORS,
     errors
   }
 }
 
 const removeErrors = () => {
   return {
-    type: REMOVE_ERRORS,
+    type: REMOVE_BEAT_ERRORS,
   }
 }
 
