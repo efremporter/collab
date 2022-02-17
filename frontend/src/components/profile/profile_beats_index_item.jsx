@@ -64,8 +64,8 @@ class ProfileBeatsIndexItem extends React.Component {
           <source src={`/api/beats/stream/${this.props.beat.file}`}/>
         </audio>
         <br></br>
-        <div>{this.state.button}</div>
-        <div>{this.state.comments}</div>
+        <div >{this.state.button}</div>
+        <div >{this.state.comments}</div>
       </div>
     )
   }

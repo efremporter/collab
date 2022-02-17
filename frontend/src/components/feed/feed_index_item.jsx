@@ -66,8 +66,8 @@ class FeedIndexItem extends React.Component {
         </audio>
           
         </div>
-        <div className="comments-button">{this.state.button}</div>
-        <div className="comments">{this.state.comments}</div>
+        <div >{this.state.button}</div>
+        <div >{this.state.comments}</div>
       </div>
     )
   }

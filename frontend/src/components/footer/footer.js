@@ -33,13 +33,13 @@ class Footer extends React.Component {
             <br />
               <a href={"https://www.linkedin.com/in/daniel-bai-227826b2/"} target="_blank"><img id="linkedin-logo-3" src={require('../../images/375-3755097_join-the-conversation-linkedin-logo-white-png-transparent.png')} /></a>
           </span>
-          <span className="email-logo">
+          {/* <span className="email-logo">
             <img id="email-logo-1" src={require('../../images/Daco_3269642.png')} /> 
             <br />
             <img id="email-logo-2" src={require('../../images/Daco_3269642.png')} />
             <br />
             <img id="email-logo-3" src={require('../../images/Daco_3269642.png')} />
-          </span>
+          </span> */}
           <span className="names">
             <p id="Zack-Alsiday">Zack Alsiday</p>
             {/* <br /> */}

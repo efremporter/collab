@@ -1,7 +1,7 @@
 .welcome-title{
    display: flex;
-   justify-content: center;
-}
+   justify-content: center; 
+} 
 #logo{
     height: 13rem;
     border-radius: 3rem;
@@ -12,7 +12,7 @@
   position: relative;
   width: fit-content;
   left: 73.2%;
-  top: 7.52rem;
+  bottom: 1rem;
 }
 #github-logo-1{
     display: flex;
@@ -71,7 +71,7 @@
 .linkedin-logo{
   position: relative;
   left: 76.2%;
-  bottom: 1rem;
+  bottom: 9.51rem;
 
 }
 #linkedin-logo-1{
@@ -97,12 +97,14 @@
 
 }
 
-.email-logo{
+.email-logo {
   position: relative;
   left: 79%;
     bottom: 9.7rem;
 
 }
+
+
 #email-logo-1{
     display: flex;
    width: 2rem;
@@ -160,7 +162,9 @@ bottom: 18rem;
     bottom: 42rem
 
 }
-
+.gap{
+    color: transparent;
+}
 
 .login-but-container button, 
 .signup-but-container button {
@@ -259,12 +263,15 @@ bottom: 18rem;
 
 .email-address{
   position: relative;
-  left: 83%;
+  left: 80%;
   bottom: 25.9rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.1rem;
   width: fit-content;
+
 }
+
+
 #Zack-Alsiday-ad{
    
     position: relative;
@@ -285,8 +292,9 @@ bottom: 18rem;
    position: relative;
    top: 5rem;
    bottom: 8.9rem;
-   right: 30%;
+   right: 28%;
     display: flex;
     flex-direction: column;
+
     
 } 
