@@ -62,9 +62,11 @@ class SignupForm extends React.Component {
           <div className='login-but-container' >
             <Link className='login-but' to={'/login'} style={{ textDecoration: 'none' }}><button className="login-but-text" >LOGIN</button></Link>
           </div>
+          <div className='gap'>hi</div>
           <div className='login-but-container'>
             <button className="guest-user-but" onClick={this.props.logInGuestUser} >Guest User</button>
           </div>
+          <div className='gap'>hi</div>
           <div className='signup-but-container'>
             <Link className='signup-but' to={'/signup'} style={{ textDecoration: 'none' }}><button className="signup-but-text" >SIGNUP</button></Link>
           </div>
@@ -139,13 +141,13 @@ class SignupForm extends React.Component {
             <br />
             <a href={"https://www.linkedin.com/in/daniel-bai-227826b2/"} target="_blank"><img id="linkedin-logo-3" src={require('../../images/375-3755097_join-the-conversation-linkedin-logo-white-png-transparent.png')} /></a>
           </span>
-          <span className="email-logo">
+          {/* <span className="email-logo">
             <img id="email-logo-1" src={require('../../images/Daco_3269642.png')} />
             <br />
             <img id="email-logo-2" src={require('../../images/Daco_3269642.png')} />
             <br />
             <img id="email-logo-3" src={require('../../images/Daco_3269642.png')} />
-          </span>
+          </span> */}
           <span className="names">
             <p id="Zack-Alsiday">Zack Alsiday</p>
             {/* <br /> */}
