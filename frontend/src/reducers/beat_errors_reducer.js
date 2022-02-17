@@ -1,4 +1,4 @@
-import { RECEIVE_ERRORS, REMOVE_ERRORS } from "../actions/beat_actions";
+import { RECEIVE_BEAT_ERRORS, REMOVE_BEAT_ERRORS } from "../actions/beat_actions";
 
 const BeatErrorsReducer = (state=[], action) => {
 
@@ -6,10 +6,10 @@ const BeatErrorsReducer = (state=[], action) => {
 
   switch(action.type) {
     
-    case RECEIVE_ERRORS: 
+    case RECEIVE_BEAT_ERRORS: 
       return action.errors
 
-    case REMOVE_ERRORS:
+    case REMOVE_BEAT_ERRORS:
       return [];
 
     default: 

@@ -28,12 +28,15 @@ class CommentsIndexItem extends React.Component {
     return `${hour}:${minute} ${AMPM}  ${month}/${day}/${year[0].slice(2)}`
   } 
 
+  delete() {
+    this.props.deleteComment(this.props.comment._id)
+  }
 
   render() {
     console.log(this.props)
     let button = null
     if (this.props.currentUserId === this.props.comment.author || this.props.beat.user === this.props.currentUserId) {
-      button = <button>Delete</button>
+      button = <button className="profile-delete-but" onClick={this.delete.bind(this)}>Delete</button>
     }
     if (this.props.comment.beat === this.props.beat._id) {
       return (
