@@ -8,12 +8,13 @@ import SignupFormContainer from './session/signup_form_container.js';
 import FeedContainer from './feed/feed_container';
 import ProfileContainer from './profile/profile_container';
 import FooterContainer from './footer/footer_container';
+import MainPageContainer from './main/main_page_container';
 
 const App = () => (
   <div>
     <NavBarContainer />
     <Switch>
-        <AuthRoute exact path="/" component={MainPage} />
+        <AuthRoute exact path="/" component={MainPageContainer} />
         <AuthRoute exact path="/login" component={LoginFormContainer} />
         <AuthRoute exact path="/signup" component={SignupFormContainer} />
         <ProtectedRoute exact path ="/profile" component={ProfileContainer} />

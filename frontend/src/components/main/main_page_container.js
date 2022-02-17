@@ -7,6 +7,6 @@ const mDTP = dispatch => {
     logInGuestUser: () => dispatch(login({email: "guest@user.com", password: "NobodyWillGuessThis18"}))
   }
 }
-export default connect(mapStateToProps, mDTP)(MainPage);
+export default connect(null, mDTP)(MainPage);
 
 
