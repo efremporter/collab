@@ -66,6 +66,7 @@ class SignupForm extends React.Component {
             <Link className='signup-but' to={'/signup'} style={{ textDecoration: 'none' }}><button className="signup-but-text" >SIGNUP</button></Link>
           </div>
         </div>
+        <div className="signup-form-1">
         <form className='signup-form' onSubmit={this.handleSubmit}>
           <div className="input-elements">
             <div className='form-title-signup' >CREATE AN ACCOUNT</div>
@@ -113,6 +114,7 @@ class SignupForm extends React.Component {
             {this.renderErrors()}
           </div>
         </form>
+        </div>
         <div className="creators-info">
           <span className="github-logo">
             <span className="github-logo-pic">

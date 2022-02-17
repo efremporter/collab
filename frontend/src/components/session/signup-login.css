@@ -1,8 +1,12 @@
 .signup-form{ 
     width: 30%;
     margin-top: 5rem;
-    display: block;
-    justify-content: center;
+
+}
+.signup-form-1{
+  display:flex;
+  justify-content: center;
+  margin-left: 8rem;
 }
 
 .llogin-signup-but-container{
@@ -22,19 +26,16 @@ input[type=text], input[type=password]{
 
 .form-title-login{
   color: white;
-  position: absolute;
 
-  left: 55%;
   font-size: 1.2rem;
-  bottom: 20.45rem
+
 }
 
 .form-title-signup{
     color: white;
-  position: absolute;
-  left: 26%;
+
   font-size: 1.2rem;
-    bottom: 33.45rem
+   
 }
 
 
