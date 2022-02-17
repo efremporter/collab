@@ -1,13 +1,13 @@
-.signup-form{
-    /* border: 1px solid red;
-    box-sizing: border-box; */
-    padding: 16px;
-
-    margin-top: 1rem;
+.signup-form{ 
     width: 30%;
-    position: relative;
-    bottom: 47rem;
-    margin-left: 9rem
+    margin-top: 5rem;
+    display: block;
+    justify-content: center;
+}
+
+.llogin-signup-but-container{
+  display: flex;
+  justify-content: center;
 }
 
 input[type=text], input[type=password]{
