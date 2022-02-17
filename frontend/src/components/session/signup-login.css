@@ -1,13 +1,17 @@
-.signup-form{
-    /* border: 1px solid red;
-    box-sizing: border-box; */
-    padding: 16px;
-
-    margin-top: 1rem;
+.signup-form{ 
     width: 30%;
-    position: relative;
-    bottom: 47rem;
-    margin-left: 9rem
+    margin-top: 5rem;
+
+}
+.signup-form-1{
+  display:flex;
+  justify-content: center;
+  margin-left: 8rem;
+}
+
+.llogin-signup-but-container{
+  display: flex;
+  justify-content: center;
 }
 
 input[type=text], input[type=password]{
@@ -22,19 +26,16 @@ input[type=text], input[type=password]{
 
 .form-title-login{
   color: white;
-  position: absolute;
 
-  left: 55%;
   font-size: 1.2rem;
-  bottom: 20.45rem
+
 }
 
 .form-title-signup{
     color: white;
-  position: absolute;
-  left: 26%;
+
   font-size: 1.2rem;
-    bottom: 33.45rem
+   
 }
 
 
