@@ -10,7 +10,6 @@ const mapStateToProps = state => ({
 const mDTP = dispatch => {
   return {
     logout: () => dispatch(logout()),
-    logInDemoUser: () => dispatch(login({email: "guest@user.com", password: "NobodyWillGuessThis18"}))
   }
 }
 export default connect(mapStateToProps, mDTP)(NavBar);

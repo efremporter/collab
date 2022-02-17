@@ -55,6 +55,7 @@ class LoginForm extends React.Component {
           <div className='login-but-container' >
             <Link className='login-but' to={'/login'} style={{ textDecoration: 'none' }}><button className="login-but-text" >LOGIN</button></Link>
           </div>
+          <button onClick={this.props.logInGuestUser} >Guest User</button>
           <div className='signup-but-container'>
             <Link className='signup-but' to={'/signup'} style={{ textDecoration: 'none' }}><button className="signup-but-text" >SIGNUP</button></Link>
           </div>
