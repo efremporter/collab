@@ -60,10 +60,12 @@ router.post('/', passport.authenticate('jwt', { session: false }), upload.single
         const newComment = new Comment({
           title: req.body.title,
           file: commentUrl,
-          user: req.user.id,
+          author: req.user._id,
           beat: req.body.beat
       });
-        newComment.save().then(comment => res.json(comment));
+        newComment.save().then(comment => {
+          res.json(comment)
+        });
         unlinkFile(file.path)
       })
     }

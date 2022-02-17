@@ -62,6 +62,7 @@ router.post('/', passport.authenticate('jwt', { session: false }), upload.single
       if (!isValid) {
         return res.status(400).json(errors);
       }
+      console.log(req.user)
       const file = req.file;
       uploadFile(file)
       .then(response => {
