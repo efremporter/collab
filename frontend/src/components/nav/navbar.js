@@ -79,6 +79,7 @@ class NavBar extends React.Component {
                 <div className='signup-but-container'>
                 <Link className='signup-but' to={'/signup'} style={{ textDecoration: 'none' }}><button className="signup-but-text" >SIGNUP</button></Link>
                 </div>
+                <button onClick={this.props.logInDemoUser}>Guest User</button>
               </div>
           </div>
         );
