@@ -26,15 +26,21 @@ class CommentsIndexItem extends React.Component {
       AMPM = "PM"
     }
     return `${hour}:${minute} ${AMPM}  ${month}/${day}/${year[0].slice(2)}`
-  }
+  } 
 
 
   render() {
+    console.log(this.props)
+    let button = null
+    if (this.props.currentUserId === this.props.comment.author || this.props.beat.user === this.props.currentUserId) {
+      button = <button>Delete</button>
+    }
     if (this.props.comment.beat === this.props.beat._id) {
       return (
         <div className="profile-index-beat">
           <div className="profile-index-beat-title">
             {this.props.comment.title}
+            {button}
           </div> 
           <div className="profile-index-beat-date">
             {this.parseDate()}
