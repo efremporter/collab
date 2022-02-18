@@ -30,14 +30,16 @@ input[type=text], input[type=password]{
 
 .form-title-login{
   color: white;
-
+  position: relative;
+  left: 18.5rem;
   font-size: 1.2rem;
 
 }
 
 .form-title-signup{
     color: white;
-
+  position: relative;
+  left: 10.5rem;
   font-size: 1.2rem;
    
 }
@@ -91,7 +93,7 @@ body{
   border: none;
   background: #aaa0a0;
   border-radius: 1rem;
-  font-weight: 530;
+  font-weight: 730;
   font-size: 18px;
   position: relative;
   top: 0.8rem;

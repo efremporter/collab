@@ -1,11 +1,10 @@
 .feed-beats-container {
-    position: block;
-    margin: 2rem 0 0 5rem;
+    margin: auto;
     border-style: solid;
     border-radius: 1rem;
     border-width: thin;
     height: 50rem;
-    width: 88%;
+    width: 50%;
     overflow: scroll;
     overflow-x: hidden;
     border-color: red;
@@ -13,14 +12,30 @@
  
 }
 .comments-button{
-    margin-left: 2rem;
+ position: relative;
+ top: 1rem;
+ left: 2rem;
 }
 
 .comments{
-    display: block;
+    /* display: block; */
     margin-bottom: 1rem;
-    margin-left: 100rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+   
 } 
+
+.open-comments-feed{
+    border-style: solid;
+    border-width: thin;
+    max-width: 90%;
+    padding: 2rem;
+    display: flex;
+    /* justify-content: center; */
+    border-radius: 1rem;
+}
+
+
 .feed-beats-container::-webkit-scrollbar {
     display: none;
 }
@@ -34,11 +49,13 @@
     font-size: 3rem;
     font-size: 1.2rem;
     padding: 0 0 0.3rem 0;
+    /* width: fit-content; */
 }
 
 .feed-beat-title{
     color: white;
     font-family: Courier;
+    /* max-width: 100px; */
 }
 
 .feed-beat-author {
@@ -55,14 +72,19 @@
     border-radius: 1rem;
     border-color: rgb(195, 74, 74);
     padding: 0rem 1.5rem 1.5rem 1.5rem;
+    /* position: relative;
+    left: 41%; */
+    /* display: flex;
+    justify-content: center; */
 }
 
 
-.feed-beat-content{
-   margin-left: 1rem;
-   margin-top: 2rem;
+/* .feed-beat-content{
+  
+  
+   /* margin-top: 2rem; */
    
-}
+/* } */
 
 .feed-beat-date{
   
