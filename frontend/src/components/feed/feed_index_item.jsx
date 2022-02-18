@@ -38,7 +38,7 @@ class FeedIndexItem extends React.Component {
 
   getComments() {
     this.setState({
-      comments: <CommentsIndexContainer id={this.props.id} beat={this.props.beat}/>,
+      comments: <div className="open-comments-feed"><CommentsIndexContainer id={this.props.id} beat={this.props.beat} /></div>,
       button: <button onClick={this.closeComments.bind(this)}>Close</button>
     })
   }
@@ -56,7 +56,7 @@ class FeedIndexItem extends React.Component {
     return (
       <div className="feed-beat">
         <div className="feed-beat-content">
-          <div style={{ textDecoration: 'none' }}><h1 className="feed-beat-title">{this.props.beat.title}</h1></div>
+          <div className="feed-beat-title" style={{ textDecoration: 'none' }}><h1 className="feed-beat-title">{this.props.beat.title}</h1></div>
           <Link to={`/profile/${this.props.beat.user}`}style={{ textDecoration: 'none' }}><h1 className="feed-beat-author">{this.getHandle()}</h1></Link>
           <div className="feed-beat-date">
             {this.parseDate()}
@@ -66,8 +66,8 @@ class FeedIndexItem extends React.Component {
         </audio>
           
         </div>
-        <div >{this.state.button}</div>
-        <div >{this.state.comments}</div>
+        <div className="comments-button" >{this.state.button}</div>
+        <div className="comments">{this.state.comments}</div>
       </div>
     )
   }

@@ -26,6 +26,8 @@ class NavBar extends React.Component {
               </div>
             </div>
         );
+      } else {
+              return null 
       }
   }
 
@@ -33,7 +35,7 @@ class NavBar extends React.Component {
       return (
       <div className="splash-body">
         <div className='header'>
-            <div className="welcome-title"><img id="logo" src={require('../../images/collab-2.png')} /></div>
+            {/* <div className="welcome-title"><img id="logo" src={require('../../images/collab-2.png')} /></div> */}
             <br/>
             {this.getLinks()}
         </div>

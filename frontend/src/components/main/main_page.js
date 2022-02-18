@@ -6,6 +6,7 @@ class MainPage extends React.Component {
   render() {
     return (
     <div className="general-form">
+        <div className="welcome-title"><img id="logo" src={require('../../images/collab-2.png')} /></div>
             <div className="creators-info">
             <span className="github-logo">
                 <span className="github-logo-pic">
@@ -49,19 +50,20 @@ class MainPage extends React.Component {
               <p id="Daniel-Bai-ad"> danielbai@gmail.com</p>
             </span>
             </div>
-              <div className='login-signup-but-container'>
-                <div className='login-but-container' >
-                <Link className='login-but' to={'/login'} style={{ textDecoration: 'none' }}><button className="login-but-text" >LOGIN</button></Link>
-                </div>
-                <div className='gap'>hi</div>
-                <div className='login-but-container'>
-                  <button className="guest-user-but" onClick={this.props.logInGuestUser}>Guest User</button>
-                </div>
-               <div className='gap'>hi</div>
-                <div className='signup-but-container'>
-                <Link className='signup-but' to={'/signup'} style={{ textDecoration: 'none' }}><button className="signup-but-text" >SIGNUP</button></Link>
-                </div>
+            
+            <div className='login-signup-but-container'>
+              <div className='login-but-container' >
+              <Link className='login-but' to={'/login'} style={{ textDecoration: 'none' }}><button className="login-but-text" >LOGIN</button></Link>
               </div>
+              <div className='gap'>hi</div>
+              <div className='login-but-container'>
+                <button className="guest-user-but" onClick={this.props.logInGuestUser}>Guest User</button>
+              </div>
+              <div className='gap'>hi</div>
+              <div className='signup-but-container'>
+              <Link className='signup-but' to={'/signup'} style={{ textDecoration: 'none' }}><button className="signup-but-text" >SIGNUP</button></Link>
+              </div>
+            </div>
           </div>
         );
     
