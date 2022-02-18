@@ -73,8 +73,9 @@
     margin-left: 20px;
     border-radius: 1rem;
     border-color: rgb(195, 74, 74);
-    padding: 0rem 1.5rem 0.2rem 1.5rem;
+    padding: 0rem 1.5rem 0rem 1.5rem;
     width: 86%;
+    margin-top: 0.2rem;
 }
 
 
