@@ -1,6 +1,6 @@
 .signup-form{ 
     width: fit-content;
-    margin-top: 5rem;
+    margin-top: 1rem;
 
 }
 .signup-form-1{
@@ -95,6 +95,8 @@ body{
   font-size: 18px;
   position: relative;
   top: 0.8rem;
+  right: 0.4rem;
+
 }
 
 .form-but:hover {
