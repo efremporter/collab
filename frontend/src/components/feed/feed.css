@@ -28,8 +28,8 @@
 .open-comments-feed{
     border-style: solid;
     border-width: thin;
-    max-width: 90%;
-    padding: 2rem;
+    max-width: 85%;
+    padding: 0rem 2rem 2rem;
     display: flex;
     /* justify-content: center; */
     border-radius: 1rem;
