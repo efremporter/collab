@@ -187,12 +187,6 @@ bottom: 18rem;
     color: black;
 }
 
-/* .login-but-text:hover, 
-.signup-but-text:hover {
-    color: black;
-} */
-
-
 .drop-down-menu-bt {
 
   background-color: rgba(128, 128, 128, 0.349);
@@ -206,10 +200,6 @@ bottom: 18rem;
   margin-right: -3rem;
   position: relative;
   bottom: 0.5rem;
-
-  
-  
-
 }
 
 .drop-down-menu {

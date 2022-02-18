@@ -5,7 +5,7 @@ import CommentsIndexContainer from '../comments/comments_index_container'
 class ProfileBeatsIndexItem extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {comments: null, button: <button onClick={this.getComments.bind(this)}>Comments</button>}
+    this.state = {comments: null, button: <button className="comments-button" onClick={this.getComments.bind(this)}>Comments</button>}
   }
 
   parseDate() {
@@ -38,12 +38,12 @@ class ProfileBeatsIndexItem extends React.Component {
   getComments() {
     this.setState({
       comments: <CommentsIndexContainer id={this.props.id} beat={this.props.beat}/>, 
-      button: <button onClick={this.closeComments.bind(this)}>Close</button>
+      button: <button className="comments-button" onClick={this.closeComments.bind(this)}>Close</button>
     })
   }
 
   closeComments() {
-    this.setState({comments: null, button: <button onClick={this.getComments.bind(this)}>Comments</button>})
+    this.setState({comments: null, button: <button className="comments-button" onClick={this.getComments.bind(this)}>Comments</button>})
   }
   
   render() {
@@ -64,7 +64,7 @@ class ProfileBeatsIndexItem extends React.Component {
           <source src={`/api/beats/stream/${this.props.beat.file}`}/>
         </audio>
         <br></br>
-        <div >{this.state.button}</div>
+        {this.state.button}
         <div >{this.state.comments}</div>
       </div>
     )

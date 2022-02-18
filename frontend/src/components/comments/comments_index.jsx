@@ -15,7 +15,7 @@ class CommentsIndex extends React.Component {
     let comments;
     comments = this.props.comments.map((comment, key) => {
       if (comment.beat === this.props.beat._id) {
-        return <li><CommentsIndexItem users={this.props.users} fetchAuthor={this.props.fetchAuthor} key={key} deleteComment={this.props.deleteComment} currentUserId={this.props.currentUserId} beat={this.props.beat} comment={comment}/></li>
+        return <li className="comment-list"><CommentsIndexItem users={this.props.users} fetchAuthor={this.props.fetchAuthor} key={key} deleteComment={this.props.deleteComment} currentUserId={this.props.currentUserId} beat={this.props.beat} comment={comment}/></li>
       } else {
         return null;
       }
@@ -27,7 +27,7 @@ class CommentsIndex extends React.Component {
         <ul>
           {comments}
         </ul>
-        <PostCommentFormContainer  id={this.props.id} beat={this.props.beat} createComment={this.props.createComment}/>
+        <PostCommentFormContainer id={this.props.id} beat={this.props.beat} createComment={this.props.createComment}/>
       </div>
     )
   }

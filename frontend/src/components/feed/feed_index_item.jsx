@@ -5,7 +5,7 @@ import CommentsIndexContainer from '../comments/comments_index_container';
 class FeedIndexItem extends React.Component {       
   constructor(props) {
     super(props)
-    this.state = {comments: null, button: <button onClick={this.getComments.bind(this)}>Comments</button>}
+    this.state = {comments: null, button: <button className="comments-button" onClick={this.getComments.bind(this)}>Comments</button>}
     this.getHandle = this.getHandle.bind(this)
   }
 
@@ -39,12 +39,12 @@ class FeedIndexItem extends React.Component {
   getComments() {
     this.setState({
       comments: <div className="open-comments-feed"><CommentsIndexContainer id={this.props.id} beat={this.props.beat} /></div>,
-      button: <button onClick={this.closeComments.bind(this)}>Close</button>
+      button: <button className="comments-button" onClick={this.closeComments.bind(this)}>Close</button>
     })
   }
 
   closeComments() {
-    this.setState({comments: null, button: <button onClick={this.getComments.bind(this)}>Comments</button>})
+    this.setState({comments: null, button: <button className="comments-button" onClick={this.getComments.bind(this)}>Comments</button>})
   }
 
   getHandle() {
@@ -56,17 +56,17 @@ class FeedIndexItem extends React.Component {
     return (
       <div className="feed-beat">
         <div className="feed-beat-content">
-          <div className="feed-beat-title" style={{ textDecoration: 'none' }}><h1 className="feed-beat-title">{this.props.beat.title}</h1></div>
-          <Link to={`/profile/${this.props.beat.user}`}style={{ textDecoration: 'none' }}><h1 className="feed-beat-author">{this.getHandle()}</h1></Link>
+          <div style={{ textDecoration: 'none' }}><h1 className="feed-beat-title">{this.props.beat.title}</h1></div>
+          <div className="feed-beat-author"><Link to={`/profile/${this.props.beat.user}`}style={{ textDecoration: 'none' }}><h1 className="feed-beat-author">{this.getHandle()}</h1></Link></div>
           <div className="feed-beat-date">
             {this.parseDate()}
           </div>
-        <audio controls>
+        <audio className="audio-player" controls>
           <source  src={`/api/beats/stream/${this.props.beat.file}`}/>
         </audio>
           
         </div>
-        <div className="comments-button" >{this.state.button}</div>
+        <div>{this.state.button}</div>
         <div className="comments">{this.state.comments}</div>
       </div>
     )

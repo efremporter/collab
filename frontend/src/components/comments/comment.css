@@ -10,3 +10,27 @@
 .profile-comment-link:hover {
   color: #FFFFFF;
 }
+
+.comments-button {
+  color: white;
+  border-color: white;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: transparent;
+  font-weight: 700;
+  border-color: #EA3323;
+  border-radius: 5%;
+}
+
+.profile-delete-but {
+  color: white;
+  border-color: white;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: transparent;
+  font-weight: 700;
+  border-color: #EA3323;
+  border-radius: 5%;
+}
+
+.comment-list {
+  list-style: none;
+}

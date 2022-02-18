@@ -51,7 +51,7 @@ class LoginForm extends React.Component {
   render() {
     return (
       <div className="login-page">
-        <div className="welcome-title"><img id="logo" src={require('../../images/collab-2.png')} /></div>
+        <div className="welcome-title"><Link to={"/"}><img id="logo" src={require('../../images/collab-2.png')} /></Link></div>
         <div className='llogin-signup-but-container'>
           <div className='login-but-container' >
             <Link className='login-but' to={'/login'} style={{ textDecoration: 'none' }}><button className="login-but-text" >LOGIN</button></Link>
