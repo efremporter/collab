@@ -1,7 +1,7 @@
 .profile-beat-form {
-    margin-left: 3rem;
+    margin: auto;
     margin-top: 0rem;
-    position: relative;
+    position: relative; 
     top: 7rem;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -38,7 +38,7 @@
     padding-bottom: 0.2rem;
     font-size: 1.2rem;
     height: 3.5rem;
-    color: red;
+    color: rgb(255, 0, 0);
 }
 
 .profile-post-beat-input {
