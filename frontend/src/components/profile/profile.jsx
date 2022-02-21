@@ -18,14 +18,19 @@ class Profile extends React.Component {
     if (this.props.currentUser.id === this.props.userId) {
       return (
         <div>
+          <div className="profile-welcome-title"><img id="profile-logo" src={require('../../images/collab-2.png')} /></div>
           <div className='profile-title'>{this.props.currentUser.handle}'s Profile</div>
+          <div className="beat-form-and-profile-beats">
           <PostBeatFormContainer />
           <ProfileBeatsIndexContainer id={this.props.currentUser.id} currentUser={this.props.currentUser} />
-        </div>
+          </div>
+          </div>
+
       )
     } else {
       return (
         <div>
+          <div className="profile-welcome-title"><img id="profile-logo" src={require('../../images/collab-2.png')} /></div>
           <div className='profile-title'>{this.props.user.handle}'s Profile</div>
           <ProfileBeatsIndexContainer id={this.props.user._id} currentUser={this.props.user} />
       </div>

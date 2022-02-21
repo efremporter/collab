@@ -4,8 +4,7 @@
     margin: auto;
     position: relative;
     top: 7rem;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-radius: 1rem;
     padding: 0 0 0 0;
     background-color: rgba(3, 2, 2, 0.438);
     width: 54.4%;
@@ -21,8 +20,27 @@
     padding: 2rem 0 0 0;
     font-size: 3rem;
  position: relative;
-    top: 6rem;
+ bottom: 15rem
     
+}
+.beat-form-and-profile-beats{
+    position: relative;
+    bottom: 10rem;
+}
+
+.profile-welcome-title {
+    width: fit-content;
+    height: fit-content;
+    margin-left: 5rem;
+    position: relative;
+    top: 0.7rem;
+     opacity: 0.68;
+}
+
+#profile-logo{
+    width: fit-content;
+    height: 13rem;
+     border-radius: 3rem;
 }
 
 /* PROFILE POST */
@@ -46,11 +64,11 @@
 }
 
 .profile-post-beat-input {
-    width: 21.4rem;
+    width: 20.51rem;
     color: blue;
 }
 
-.profile-post-beat-input:hover {
+#profile-post-beat-input:hover {
     background-color: red;
     color: black;
     border-color: red;
@@ -123,3 +141,8 @@
     margin: 0.8rem 0 1rem 0.2rem;
     font-weight: lighter
 }
+
+/* .profile-page{
+    position: relative;
+    bottom: 10rem
+} */

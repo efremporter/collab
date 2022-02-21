@@ -45,7 +45,7 @@ class PostBeatForm extends React.Component {
         <div className='profile-post-beat-title'>Post a Beat</div>
         <div className='profile-post-beat-container'>
           <input className='profile-post-beat-upload' type="file" onChange={this.handleChange('file')}></input>
-          <input className='profile-post-beat-input' type="text" placeholder="Title Your Beat" value={this.state.title} onChange={this.handleChange('title')}></input>
+          <div className='profile-post-beat-input'><input id='profile-post-beat-input' type="text" placeholder="Title Your Beat" value={this.state.title} onChange={this.handleChange('title')}></input></div>
           <button className='profile-post-beat-submit-but' onClick={this.handleSubmit.bind(this)}>Submit</button>
           <div className='profile-post-beat-errors-container'>
             {this.props.errors.map(error => {
