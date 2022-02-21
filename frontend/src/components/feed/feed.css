@@ -27,8 +27,8 @@
 } 
 
 .welcome-title-2 {
-    width: fit-content;
-    height: fit-content;
+    /* width: fit-content;
+    height: fit-content;  */
     margin-left: 5rem;
     position: relative;
     bottom: 3.3rem;
@@ -37,7 +37,7 @@
 
 #logo-2{
     width: fit-content;
-    height: 13rem;
+    height: 5%;
      border-radius: 3rem;
 }
 
