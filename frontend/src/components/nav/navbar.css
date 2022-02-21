@@ -285,7 +285,7 @@ bottom: 18rem;
 .creators-info{
    position: relative;
    top: 5rem;
-   /* bottom: 8.9rem; */
+
    right: 28.5%;
     display: flex;
     flex-direction: column; 
