@@ -13,6 +13,7 @@ import MainPageContainer from './main/main_page_container';
 const App = () => (
   <div>
     <NavBarContainer />
+    <FooterContainer />
     <Switch>
         <AuthRoute exact path="/" component={MainPageContainer} />
         <AuthRoute exact path="/login" component={LoginFormContainer} />
@@ -21,7 +22,7 @@ const App = () => (
         <ProtectedRoute exact path ="/feed" component={FeedContainer} />
         <ProtectedRoute exact path ="/profile/:id" component={ProfileContainer} />
     </Switch>
-    <FooterContainer />
+   
   </div>
 );
 
