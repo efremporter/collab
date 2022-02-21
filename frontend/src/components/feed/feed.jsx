@@ -16,6 +16,7 @@ class Feed extends React.Component {
     return (
       <div>
         <div className="feed-title">FEED</div>
+        <div className="welcome-title-2"><img id="logo-2" src={require('../../images/collab-2.png')} /></div>
         <div className="feed-beats-container">
           {this.props.beats.map( (beat, idx) => {
             return <FeedIndexItem id={this.props.id} fetchUser={this.props.fetchUser} users={this.props.users} key={idx} beat={beat} />

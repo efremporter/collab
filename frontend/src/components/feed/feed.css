@@ -26,6 +26,22 @@
    
 } 
 
+.welcome-title-2 {
+    width: fit-content;
+    height: fit-content;
+    margin-left: 5rem;
+    position: relative;
+    bottom: 3.3rem;
+     opacity: 0.68;
+}
+
+#logo-2{
+    width: fit-content;
+    height: 13rem;
+     border-radius: 3rem;
+}
+
+
 .open-comments-feed{
     border-style: solid;
     border-width: thin;
@@ -47,10 +63,8 @@
     display: flex;
     justify-content: center;
     font-size: 3rem;
-    font-size: 2rem;
     padding: 0 0 0.3rem 0;
-    font-family: Courier;
-    font-weight: bold;
+
 }
 
 .feed-beat-title{
