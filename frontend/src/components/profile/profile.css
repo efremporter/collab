@@ -38,8 +38,8 @@
 }
 
 #profile-logo{
-    width: fit-content;
-    height: 13rem;
+    /* width: fit-content; */
+    width: 13rem;
      border-radius: 3rem;
 }
 
