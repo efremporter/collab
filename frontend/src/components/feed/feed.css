@@ -3,7 +3,8 @@
     border-style: solid;
     border-radius: 1rem;
     border-width: thin;
-    height: 35rem;
+    height: 80vh;
+    /* max-height: 10%; */
     width: 50%;
     overflow: scroll;
     overflow-x: hidden;
