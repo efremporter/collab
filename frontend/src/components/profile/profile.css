@@ -6,7 +6,7 @@
     padding: 0 0 0 0;
     background-color: rgba(3, 2, 2, 0.438);
     width: 55.7%;
-    height: 45vh;
+    height: 48vh;
     border-style: solid;
     border-width: thin;
     border-color: red;
@@ -79,7 +79,7 @@
     background-color: #aaa0a0;
     font-weight: bold;
     border-radius: 1rem;
-    margin-bottom: 4rem;
+    margin-bottom: 5px;
 }
 
 .profile-post-beat-submit-but:hover {

@@ -13,8 +13,17 @@ module.exports = function validateBeatInput(data) {
     errors.title = 'Title field is required';
   }
 
+  
   if (!data.file || !data.file instanceof Object) {
     errors.file = 'File is invalid'
+  }
+  
+  if (data.file && data.file instanceof Object) {
+    let mp3 = data.file.originalname
+    mp3 = mp3.slice(mp3.length - 4)
+    if (mp3 !== '.mp3') {
+      errors.file = 'File must be .mp3 or .wav'
+    }
   }
 
   return {
