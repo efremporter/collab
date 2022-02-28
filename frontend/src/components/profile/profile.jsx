@@ -21,10 +21,10 @@ class Profile extends React.Component {
         <div>
           <div className='profile-title'>{this.props.currentUser.handle}'s Profile</div>
           <div className="beat-form-and-profile-beats">
-          <PostBeatFormContainer />
-          <ProfileBeatsIndexContainer id={this.props.currentUser.id} currentUser={this.props.currentUser} />
+            <PostBeatFormContainer />
+            <ProfileBeatsIndexContainer id={this.props.currentUser.id} currentUser={this.props.currentUser} />
           </div>
-          </div>
+        </div>
 
       )
     } else {

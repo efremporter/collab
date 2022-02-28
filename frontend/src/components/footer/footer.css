@@ -36,6 +36,10 @@
 
 }
 
+.footer-but:hover {
+  background-color: red;
+}
+
 .footer-content{
   background-color: #aaa0a0;
   width: 26rem;
