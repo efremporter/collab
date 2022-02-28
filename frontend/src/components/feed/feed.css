@@ -3,7 +3,7 @@
     border-style: solid;
     border-radius: 1rem;
     border-width: thin;
-    height: 72vh;
+    height: 71vh;
     /* max-height: 10%; */
     width: 50%;
     overflow: scroll;
@@ -64,8 +64,6 @@
     display: flex;
     justify-content: center;
     font-size: 3rem;
-    padding: 0 0 0.3rem 0;
-
 }
 
 .feed-beat-title{

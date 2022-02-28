@@ -37,7 +37,7 @@
 }
 
 .footer-content{
-  background-color: #aaa0a0;
+  background-color: #161616;
   width: 26rem;
   position: relative;
   /* right: 50%; */
@@ -63,4 +63,12 @@
     display: flex;
     
     flex-direction: column; 
+}
+
+.names {
+  color: white;
+}
+
+.email-address {
+  color: white;
 }
