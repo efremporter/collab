@@ -6,7 +6,6 @@
     padding: 0 0 0 0;
     background-color: rgba(3, 2, 2, 0.438);
     width: 55.7%;
-    height: 48vh;
     border-style: solid;
     border-width: thin;
     border-color: red;
@@ -144,3 +143,7 @@
     position: relative;
     bottom: 10rem
 } */
+
+.profile-post-beat-errors-container {
+    margin-bottom: 10px;
+}

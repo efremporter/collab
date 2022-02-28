@@ -41,7 +41,7 @@ class PostBeatForm extends React.Component {
 
   render() {
     return (
-      <form className="profile-beat-form" action="">
+      <form className="profile-beat-form">
         <div className='profile-post-beat-title'>Post a Beat</div>
         <div className='profile-post-beat-container'>
           <input className='profile-post-beat-upload' type="file" onChange={this.handleChange('file')}></input>
