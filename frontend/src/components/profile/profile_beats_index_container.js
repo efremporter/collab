@@ -4,7 +4,7 @@ import ProfileBeatsIndex from './profile_beats_index';
 
 const mSTP = state => {
   return {
-    beats: Object.values(state.beats)
+    beats: Object.values(state.beats).sort((a,b) => b['date'].localeCompare(a['date']))
   }
 }
 

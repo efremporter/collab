@@ -12,7 +12,7 @@ class Footer extends React.Component {
     } else {
       return (
         <div className="footer-db">
-          <button className="footer-but">Contact us</button>
+          <button className="footer-but">Contact Us</button>
           <div className="footer-content">
             <div className="creators-info-footer">
             
