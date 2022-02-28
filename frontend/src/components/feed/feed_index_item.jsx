@@ -61,8 +61,8 @@ class FeedIndexItem extends React.Component {
           <div className="feed-beat-date">
             {this.parseDate()}
           </div>
-        <audio className="audio-player" controls>
-          <source  src={`/api/beats/stream/${this.props.beat.file}`}/>
+        <audio className="audio-player" controls="true" preload="metadata">
+          <source src={`/api/beats/stream/${this.props.beat.file}`}/>
         </audio>
           
         </div>
