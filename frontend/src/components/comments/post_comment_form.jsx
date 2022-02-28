@@ -44,7 +44,7 @@ class PostCommentForm extends React.Component {
         <div>Post a comment!</div>
         <input type="file" onChange={this.handleChange('file')}/>
         <input type="text" value={this.state.title} placeholder="Title Your Comment" onChange={this.handleChange('title')}/>
-        <button onClick={this.handleSubmit.bind(this)}>Submit</button>
+        <button onClick={this.handleSubmit.bind(this)} className="comment-submit-button">Submit</button>
         <div className='profile-post-beat-errors-container'>
           {this.props.errors.map(error => {
             return <div className='profile-post-beat-error'>{error}</div>

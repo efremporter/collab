@@ -8,7 +8,6 @@ class CommentsIndexItem extends React.Component {
   }
 
   componentDidMount() {
-    console.log("here")
     this.props.fetchAuthor(this.props.comment.author)
     this.getHandle = this.getHandle.bind(this)
   }

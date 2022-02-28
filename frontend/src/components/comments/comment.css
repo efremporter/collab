@@ -29,8 +29,20 @@
   font-weight: 700;
   border-color: #EA3323;
   border-radius: 5%;
+  cursor: pointer;
 }
 
 .comment-list {
   list-style: none;
+}
+
+.comment-submit-button {
+  color: white;
+  border-color: white;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: transparent;
+  font-weight: 700;
+  border-color: #EA3323;
+  border-radius: 5%;
+  cursor: pointer;
 }
