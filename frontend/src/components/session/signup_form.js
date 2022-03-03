@@ -4,7 +4,7 @@ import * as signupcss from './signup-login.css'
 import { Link } from 'react-router-dom'
 class SignupForm extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       email: '',
       handle: '',
@@ -18,9 +18,9 @@ class SignupForm extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.signedIn === true) {
-      this.props.history.push('/login');
-    }
+    // if (nextProps.signedIn === true) {
+    //   this.props.history.push('/login');
+    // }
 
     this.setState({errors: nextProps.errors})
   }
@@ -33,14 +33,15 @@ class SignupForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    let user = {
+    const newUser = {
       email: this.state.email,
       handle: this.state.handle,
       password: this.state.password,
       password2: this.state.password2
     };
-
-    this.props.signup(user, this.props.history); 
+    const user = {email: this.state.email, password: this.state.password} 
+    this.props.signup(newUser)
+    .then( () => this.props.login(user))
   }
 
   renderErrors() {
