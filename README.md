@@ -2,6 +2,8 @@
 
 Collab Live Link: https://collab-aa.herokuapp.com/#/
 
+Technologies used: MongoDB, Mongoose, Express.js, React & Redux, Node.js, Amazon Web Services S3 (AWS), Javascript, HTML, CSS
+
 Collab is a platform that allows artists and musicians to collaborate and make music together. Producers can upload beats or sounds onto their profile, and other artists/producers can create their own versions, and post them underneath the original!
 
 ## Background and Overview
@@ -36,9 +38,6 @@ Using collab, artists can:
 - Express.js
 - React/Redux
 - Node.js
-
-## UI/UX
-- Wireframes go here
 
 ## Group Members & Work Breakdown
 - Zack Alsiday (Mainly frontend)
