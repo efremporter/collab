@@ -41,5 +41,5 @@ Using collab, artists can:
 
 ## Group Members & Work Breakdown
 - Zack Alsiday (Mainly frontend)
-- Daniel Bai (Frontend & backend)
-- Efrem Porter (Mainly backend)
+- Daniel Bai (Frontend)
+- Efrem Porter (Frontend & backend)
