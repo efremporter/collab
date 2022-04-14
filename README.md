@@ -40,6 +40,6 @@ Using collab, artists can:
 - Node.js
 
 ## Group Members & Work Breakdown
-- Zack Alsiday (Mainly frontend)
+- Zack Alsiday (Frontend)
 - Daniel Bai (Frontend)
 - Efrem Porter (Frontend & backend)
