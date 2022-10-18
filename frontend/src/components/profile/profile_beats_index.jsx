@@ -1,6 +1,5 @@
 import React from 'react'
 import ProfileBeatsIndexItem from './profile_beats_index_item';
-import * as profilecss from './profile.css'
 
 class ProfileBeatsIndex extends React.Component {
   constructor(props) {

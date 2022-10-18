@@ -1,8 +1,6 @@
 import React from 'react';
 import ProfileBeatsIndexContainer from './profile_beats_index_container';
 import PostBeatFormContainer from './post_beat_form_container';
-import * as profilecss from './profile.css'
-import { Link } from 'react-router-dom';
 
 
 class Profile extends React.Component {
